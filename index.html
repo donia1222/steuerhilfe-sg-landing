@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steuerhilfe SG – Steuererklärung Kanton St.Gallen für den Mac</title>
+<meta name="description" content="Steuerhilfe SG ist die Mac-App für Familien im Kanton St.Gallen: Belege sammeln, alle Abzüge finden, Steuern auf den Franken genau berechnen und Feld für Feld in E-Tax SG übertragen. Ihre Daten bleiben auf Ihrem Mac.">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta property="og:title" content="Steuerhilfe SG – Steuererklärung Kanton St.Gallen für den Mac">
+<meta property="og:description" content="Belege sammeln, Abzüge finden, Steuern berechnen. Privat auf Ihrem Mac.">
+<meta property="og:image" content="img/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12M6 10l6 6 6-6M5 20h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M7 12h10"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a5 5 0 0 1 3.5 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8.2 7 10 4-1.8 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M4 10h16"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/></symbol>
+    <symbol id="i-pdf" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 11v6M9 14l3 3 3-3"/></symbol>
+    <symbol id="i-repeat" viewBox="0 0 24 24"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4"/></symbol>
+    <symbol id="i-mac" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8v6M8 11h6"/></symbol>
+    <symbol id="i-cloudoff" viewBox="0 0 24 24"><path d="M3 3l18 18M8 7.5A5.5 5.5 0 0 1 17.6 10 4 4 0 0 1 20 17M17 19H7a4.5 4.5 0 0 1-1.6-8.7"/></symbol>
+    <symbol id="i-swiss" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#d52b1e" stroke="none"/><path d="M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z" fill="#fff" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top" aria-label="Steuerhilfe SG Startseite">
+      <img src="img/icon-web.png" alt="" width="50" height="50">
+      <span class="brand__txt"><span class="brand__word">Steuerhilfe SG</span><small>Steuererklärung Kanton St.Gallen</small></span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#ablauf">So geht’s</a>
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#verfuegbarkeit">Verfügbarkeit</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--primary btn--sm hdr__cta" href="#download"><svg class="ic"><use href="#i-down"/></svg>Für Mac laden</a>
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
+  </div>
+  <div class="mnav" hidden>
+    <a href="#funktionen">Funktionen</a><a href="#ablauf">So geht’s</a><a href="#datenschutz">Datenschutz</a><a href="#verfuegbarkeit">Verfügbarkeit</a><a href="#faq">FAQ</a>
+    <a class="btn btn--primary" href="#download">Für Mac laden</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__top">
+    <span class="pill reveal"><svg class="ic ic--flag"><use href="#i-swiss"/></svg>Exklusiv für den Kanton St.Gallen · Steuerjahr 2025 und 2026</span>
+    <h1 class="reveal">Die St.Galler Steuererklärung.<br><span class="grad">Endlich einfach.</span></h1>
+    <p class="lead reveal">Die Mac-App für Familien und Private im Kanton St.Gallen: Belege hineinziehen, alle Abzüge finden, Steuern auf den Franken genau berechnen – und Feld für Feld in E-Tax SG übertragen. Ihre Daten verlassen Ihren Mac nie.</p>
+    <div class="hero__ctas reveal">
+      <a class="btn btn--primary btn--lg" href="#download"><svg class="ic"><use href="#i-down"/></svg>Testversion kostenlos laden</a>
+      <a class="btn btn--ghost btn--lg" href="#ablauf">So funktioniert’s <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <ul class="hero__facts reveal">
+      <li><svg class="ic"><use href="#i-mac"/></svg>macOS 15 oder neuer</li>
+      <li><svg class="ic"><use href="#i-lock"/></svg>100% offline</li>
+      <li><svg class="ic"><use href="#i-check"/></svg>Alle 75 St.Galler Gemeinden</li>
+      <li><svg class="ic"><use href="#i-pin"/></svg>Von Lweb aus Sevelen SG</li>
+    </ul>
+  </div>
+
+  <div class="wrap">
+    <div class="m-only m-stack reveal"><div class="ui ui-tax">
+  <div class="ui-tax__top"><div><small>Geschätzte Steuern 2025</small><b class="ui-big">CHF 4’969</b><span class="ui-sub">Sevelen · gemeinsam · 2 Kinder</span></div>
+  <div class="ui-donut"><span>Steuerfuss<b>245%</b></span></div></div>
+  <div class="ui-legend"><div><i style="background:#2e6b5e"></i><small>Kanton 105%</small><b>2’129</b></div><div><i style="background:#5c9e8c"></i><small>Gemeinde 118%</small><b>2’393</b></div><div><i style="background:#b8995f"></i><small>Kirche 22%</small><b>446</b></div><div><i style="background:#c0392b"></i><small>Bund</small><b>0</b></div></div>
+</div><div class="ui">
+  <div class="ui-head"><b>Sparpotenzial</b><span class="ui-save">bis 765 CHF</span></div>
+  <div class="ui-tip"><span class="ui-dot"></span><div><b>Säule 3a ausschöpfen (Anna)</b><small>7’258 statt 3’000 einzahlen – bis 31. Dezember</small></div><span class="ui-save">– 647</span></div>
+  <div class="ui-tip"><span class="ui-dot"></span><div><b>Weiterbildungspauschale Fr. 400</b><small>ohne Belege, nur Kanton St.Gallen</small></div><span class="ui-save">– 59</span></div>
+  <div class="ui-tip"><span class="ui-dot ui-dot--i"></span><div><b>Pensionskassen-Einkauf prüfen</b><small>Fr. 10’000 Einkauf senkt die Steuern um</small></div><span class="ui-save">– 1’499</span></div>
+</div></div>
+    <div class="stack d-only reveal">
+      <div class="stack__glow" aria-hidden="true"></div>
+      <figure class="shot shot--main" data-zoom="img/overview.webp">
+        <img src="img/z/tax.webp" alt="Geschätzte Steuern 2025: CHF 4’969, aufgeteilt in Kanton, Gemeinde, Kirche und Bund" width="2127" height="475" fetchpriority="high">
+      </figure>
+      <figure class="shot shot--tips" data-zoom="img/z/spar.webp">
+        <img src="img/z/spar.webp" alt="Sparpotenzial mit konkreten Tipps und Ersparnis in Franken" width="1057" height="848">
+      </figure>
+      <figure class="shot shot--stats" data-zoom="img/z/stats.webp">
+        <img src="img/z/stats.webp" alt="Steuerbares Einkommen, Vermögen, Grenzsteuersatz und Verrechnungssteuer" width="2127" height="222">
+      </figure>
+      <div class="floatchip floatchip--a"><span class="floatchip__ic"><svg class="ic"><use href="#i-check"/></svg></span><div><b>Kanton und Bund</b><small>beide Steuern in einem Durchgang</small></div></div>
+      <div class="floatchip floatchip--b"><span class="floatchip__ic floatchip__ic--save"><svg class="ic"><use href="#i-bulb"/></svg></span><div><b>– 765 CHF</b><small>Sparpotenzial gefunden</small></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="band"><div class="wrap band__in"><svg class="ic"><use href="#i-pin"/></svg><span><b>Derzeit nur für den Kanton St.Gallen verfügbar.</b> Weitere Kantone folgen – oder auf Anfrage für Ihren Kanton.</span><a href="#verfuegbarkeit">Mehr erfahren</a></div></div>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="wrap trust__grid">
+    <div class="trust__item reveal"><b data-count="16704">16’704</b><span>Vergleichswerte mit dem offiziellen Steuerrechner der ESTV – identisch</span></div>
+    <div class="trust__item reveal"><b data-count="75">75</b><span>St.Galler Gemeinden mit aktuellem Steuerfuss inkl. Kirchgemeinden</span></div>
+    <div class="trust__item reveal"><b>1:1</b><span>Formular-Ziffern und Feldnummern wie in E-Tax SG</span></div>
+    <div class="trust__item reveal"><b>0</b><span>Daten im Internet. Kein Konto, keine Cloud, kein Tracking</span></div>
+  </div>
+</section>
+
+<!-- WARUM -->
+<section class="sec" id="warum">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow reveal">Warum Steuerhilfe SG</span>
+      <h2 class="reveal">Weniger Papierchaos.<br><em>Mehr Geld im Portemonnaie.</em></h2>
+      <p class="reveal">Die Steuererklärung ist jedes Jahr dasselbe: Belege suchen, Formulare verstehen, Abzüge vergessen. Steuerhilfe SG nimmt Ihnen genau diese Arbeit ab.</p>
+    </div>
+    <div class="compare reveal">
+      <div class="compare__col compare__col--old">
+        <h3>Bisher</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-x"/></svg>Belege in Schubladen, Mails und Apps verstreut</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Unklar, welche Abzüge erlaubt sind</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Steuerbetrag erst mit der Rechnung bekannt</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Treuhänder kostet schnell CHF 200 bis 500</li>
+        </ul>
+      </div>
+      <div class="compare__col compare__col--new">
+        <h3>Mit Steuerhilfe SG</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Alle Belege an einem Ort, automatisch erkannt</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Jeder Abzug erklärt – Kanton und Bund getrennt</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Steuerbetrag live, auf den Franken genau</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Spartipps mit konkreter Ersparnis in Franken</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section class="sec sec--tint" id="ablauf">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow reveal">So geht’s</span>
+      <h2 class="reveal">In vier Schritten<br><em>zur fertigen Steuererklärung.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="steps__tabs" role="tablist">
+        <div class="step is-on" role="tab" tabindex="0" data-panel="0"><span class="step__n">1</span><span class="step__t"><b>Belege hineinziehen</b><small>Lohnausweis, Krankenkasse, Säule 3a, Bank: als PDF oder Foto. Steuerhilfe SG liest sie direkt auf dem Mac und schlägt die Beträge vor.</small></span><div class="step__m m-only"><div class="mock">
+            <div class="mock__drop"><svg class="ic"><use href="#i-down"/></svg><b>PDFs oder Fotos hierher ziehen</b><small>Wird lokal auf dem Mac gelesen</small></div>
+            <div class="mock__docs">
+              <div class="mdoc"><span class="mdoc__ic"><svg class="ic"><use href="#i-doc"/></svg></span><div><b>Lohnausweis 2025</b><small>Werk AG, Buchs</small></div><span class="mdoc__tag">Nettolohn 85’000</span></div>
+              <div class="mdoc"><span class="mdoc__ic mdoc__ic--b"><svg class="ic"><use href="#i-shield"/></svg></span><div><b>Prämienbestätigung</b><small>Krankenkasse</small></div><span class="mdoc__tag">11’240</span></div>
+              <div class="mdoc"><span class="mdoc__ic mdoc__ic--c"><svg class="ic"><use href="#i-calc"/></svg></span><div><b>Bescheinigung Säule 3a</b><small>Vorsorgekonto</small></div><span class="mdoc__tag">7’258</span></div>
+              <div class="mdoc is-ok"><span class="mdoc__ic"><svg class="ic"><use href="#i-check"/></svg></span><div><b>Zinsausweis Sparkonto</b><small>übernommen</small></div><span class="mdoc__tag">187</span></div>
+            </div>
+          </div></div></div>
+        <div class="step" role="tab" tabindex="0" data-panel="1"><span class="step__n">2</span><span class="step__t"><b>Angaben ergänzen</b><small>Verständliche Fragen statt Formularsprache. Jede Zeile trägt die Ziffer der Steuererklärung – mit Erklärung zu jedem Feld.</small></span><div class="step__m m-only"><div class="ui">
+  <div class="ui-head"><b>Berufskosten Martin</b><span class="ui-badge">Formular 4</span></div>
+  <div class="ui-row"><span><em>1.1</em>Öffentlicher Verkehr</span><b>1’240</b></div>
+  <div class="ui-row"><span><em>2</em>Verpflegung · 205 Tage</span><b>3’075</b></div>
+  <div class="ui-row"><span><em>3</em>Übrige Berufskosten</span><b class="ui-two"><span>Kanton 2’400</span><small>Bund 2’550</small></b></div>
+  <div class="ui-row ui-row--total"><span>Total Berufskosten</span><b class="ui-two"><span>Kanton 6’715</span><small>Bund 6’865</small></b></div>
+</div></div></div>
+        <div class="step" role="tab" tabindex="0" data-panel="2"><span class="step__n">3</span><span class="step__t"><b>Prüfen und sparen</b><small>Steuerhilfe SG prüft wie das Steueramt und zeigt, wo Sie legal Steuern sparen – mit echter Ersparnis in Franken.</small></span><div class="step__m m-only"><div class="ui">
+  <div class="ui-head"><b>Sparpotenzial</b><span class="ui-save">bis 765 CHF</span></div>
+  <div class="ui-tip"><span class="ui-dot"></span><div><b>Säule 3a ausschöpfen (Anna)</b><small>7’258 statt 3’000 einzahlen – bis 31. Dezember</small></div><span class="ui-save">– 647</span></div>
+  <div class="ui-tip"><span class="ui-dot"></span><div><b>Weiterbildungspauschale Fr. 400</b><small>ohne Belege, nur Kanton St.Gallen</small></div><span class="ui-save">– 59</span></div>
+  <div class="ui-tip"><span class="ui-dot ui-dot--i"></span><div><b>Pensionskassen-Einkauf prüfen</b><small>Fr. 10’000 Einkauf senkt die Steuern um</small></div><span class="ui-save">– 1’499</span></div>
+</div></div></div>
+        <div class="step" role="tab" tabindex="0" data-panel="3"><span class="step__n">4</span><span class="step__t"><b>In E-Tax SG übertragen</b><small>Feld für Feld mit der amtlichen Feldnummer. Ein Klick kopiert den Betrag, ein Haken zeigt, was erledigt ist.</small></span><div class="step__m m-only"><div class="ui">
+  <div class="ui-head"><b>In E-Tax SG übertragen</b><span class="ui-badge">8 von 21</span></div>
+  <div class="ui-progress"><i style="width:38%"></i></div>
+  <div class="ui-field is-done"><span class="ui-check"></span><em>1.1</em><small>100</small><span>Nettolohn Person 1</span><b>85’000</b></div>
+  <div class="ui-field is-done"><span class="ui-check"></span><em>1.1</em><small>102</small><span>Nettolohn Person 2</span><b>34’750</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>10.1</em><small>438</small><span>Berufskosten</span><b>6’715</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>13.1</em><small>208</small><span>Säule 3a</span><b>7’258</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>14</em><small>600</small><span>Versicherungsprämien</span><b>9’000</b></div>
+</div></div></div>
+      </div>
+      <div class="stage d-only reveal">
+        <div class="panel is-on"><div class="panel__in"><div class="mock">
+            <div class="mock__drop"><svg class="ic"><use href="#i-down"/></svg><b>PDFs oder Fotos hierher ziehen</b><small>Wird lokal auf dem Mac gelesen</small></div>
+            <div class="mock__docs">
+              <div class="mdoc"><span class="mdoc__ic"><svg class="ic"><use href="#i-doc"/></svg></span><div><b>Lohnausweis 2025</b><small>Werk AG, Buchs</small></div><span class="mdoc__tag">Nettolohn 85’000</span></div>
+              <div class="mdoc"><span class="mdoc__ic mdoc__ic--b"><svg class="ic"><use href="#i-shield"/></svg></span><div><b>Prämienbestätigung</b><small>Krankenkasse</small></div><span class="mdoc__tag">11’240</span></div>
+              <div class="mdoc"><span class="mdoc__ic mdoc__ic--c"><svg class="ic"><use href="#i-calc"/></svg></span><div><b>Bescheinigung Säule 3a</b><small>Vorsorgekonto</small></div><span class="mdoc__tag">7’258</span></div>
+              <div class="mdoc is-ok"><span class="mdoc__ic"><svg class="ic"><use href="#i-check"/></svg></span><div><b>Zinsausweis Sparkonto</b><small>übernommen</small></div><span class="mdoc__tag">187</span></div>
+            </div>
+          </div></div></div>
+        <div class="panel"><div class="panel__in"><div class="ui">
+  <div class="ui-head"><b>Berufskosten Martin</b><span class="ui-badge">Formular 4</span></div>
+  <div class="ui-row"><span><em>1.1</em>Öffentlicher Verkehr</span><b>1’240</b></div>
+  <div class="ui-row"><span><em>2</em>Verpflegung · 205 Tage</span><b>3’075</b></div>
+  <div class="ui-row"><span><em>3</em>Übrige Berufskosten</span><b class="ui-two"><span>Kanton 2’400</span><small>Bund 2’550</small></b></div>
+  <div class="ui-row ui-row--total"><span>Total Berufskosten</span><b class="ui-two"><span>Kanton 6’715</span><small>Bund 6’865</small></b></div>
+</div></div></div>
+        <div class="panel"><div class="panel__in"><div class="ui">
+  <div class="ui-head"><b>Sparpotenzial</b><span class="ui-save">bis 765 CHF</span></div>
+  <div class="ui-tip"><span class="ui-dot"></span><div><b>Säule 3a ausschöpfen (Anna)</b><small>7’258 statt 3’000 einzahlen – bis 31. Dezember</small></div><span class="ui-save">– 647</span></div>
+  <div class="ui-tip"><span class="ui-dot"></span><div><b>Weiterbildungspauschale Fr. 400</b><small>ohne Belege, nur Kanton St.Gallen</small></div><span class="ui-save">– 59</span></div>
+  <div class="ui-tip"><span class="ui-dot ui-dot--i"></span><div><b>Pensionskassen-Einkauf prüfen</b><small>Fr. 10’000 Einkauf senkt die Steuern um</small></div><span class="ui-save">– 1’499</span></div>
+</div></div></div>
+        <div class="panel"><div class="panel__in"><div class="ui">
+  <div class="ui-head"><b>In E-Tax SG übertragen</b><span class="ui-badge">8 von 21</span></div>
+  <div class="ui-progress"><i style="width:38%"></i></div>
+  <div class="ui-field is-done"><span class="ui-check"></span><em>1.1</em><small>100</small><span>Nettolohn Person 1</span><b>85’000</b></div>
+  <div class="ui-field is-done"><span class="ui-check"></span><em>1.1</em><small>102</small><span>Nettolohn Person 2</span><b>34’750</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>10.1</em><small>438</small><span>Berufskosten</span><b>6’715</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>13.1</em><small>208</small><span>Säule 3a</span><b>7’258</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>14</em><small>600</small><span>Versicherungsprämien</span><b>9’000</b></div>
+</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNKTIONEN -->
+<section class="sec" id="funktionen">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow reveal">Funktionen</span>
+      <h2 class="reveal">Alles für die Steuererklärung.<br><em>Nichts, was stört.</em></h2>
+    </div>
+    <div class="feat">
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-scan"/></svg></span><h3>Belege lesen</h3><p>Texterkennung direkt auf dem Mac. Erkennt Lohnausweise, Prämienbestätigungen, 3a-Bescheinigungen, Bankbelege, Arztrechnungen und Spenden.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-calc"/></svg></span><h3>Steuern auf den Franken</h3><p>Amtliche St.Galler Tariftabelle, Steuerfuss Ihrer Gemeinde und Kirchgemeinde, direkte Bundessteuer mit Elterntarif.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-bulb"/></svg></span><h3>Spartipps mit Betrag</h3><p>Säule 3a, Weiterbildungspauschale, Fahrkosten, Pensionskassen-Einkauf: jeder Tipp wird neu durchgerechnet.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-users"/></svg></span><h3>Für Familien gemacht</h3><p>Kinderabzüge, Kinderbetreuung, Zweiverdienerabzug, Ausbildungskosten und gemischt-konfessionelle Ehen – alles berücksichtigt.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-copy"/></svg></span><h3>Übertragung in E-Tax SG</h3><p>Liste aller Felder mit Ziffer und Feldnummer, inklusive Formular 2, 4 und 6. Betrag anklicken, einfügen, abhaken.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-chart"/></svg></span><h3>Kanton und Bund getrennt</h3><p>Fahrkosten, Versicherungsabzug, Zweiverdienerabzug: Steuerhilfe SG zeigt beide Werte nebeneinander.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-repeat"/></svg></span><h3>Nächstes Jahr schneller</h3><p>Personen, Kinder, Arbeitgeber und Konten werden ins neue Steuerjahr übernommen. Nur noch Beträge ergänzen.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-pdf"/></svg></span><h3>Bericht als PDF</h3><p>Die komplette Berechnung für Ihre Unterlagen – Einkommen, Abzüge, Vermögen und Steuerbetrag auf drei Seiten.</p></article>
+      <article class="fcard fcard--accent reveal"><span class="ibox"><svg class="ic"><use href="#i-calendar"/></svg></span><h3>Termine im Blick</h3><p>Einreichefrist, letzter Tag für die Säule 3a, Verfalltag der Steuern: Steuerhilfe SG erinnert Sie an das Wichtige.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="sec" id="einblicke">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow reveal">Einblicke</span>
+      <h2 class="reveal">Klar, ruhig, verständlich.<br><em>So sieht Steuerhilfe SG aus.</em></h2>
+      <p class="reveal">Alle Bildschirme zeigen eine fiktive Beispielfamilie aus Sevelen.</p>
+    </div>
+
+    <div class="row reveal">
+      <div class="row__copy">
+        <span class="row__kicker">Live-Berechnung</span>
+        <h3>Ihre Steuern – sofort und auf den Franken genau</h3>
+        <p>Jede Eingabe verändert den Betrag sofort. Kanton, Gemeinde, Kirche und Bund sind getrennt ausgewiesen, mit dem Steuerfuss Ihrer Gemeinde.</p>
+        <ul class="ticks"><li><svg class="ic"><use href="#i-check"/></svg>Amtliche Tariftabelle St.Gallen</li><li><svg class="ic"><use href="#i-check"/></svg>Steuerfüsse aller 75 Gemeinden und Kirchgemeinden</li></ul>
+      </div>
+      <div class="row__media">
+        <div class="row__ui"><div class="ui ui-tax">
+  <div class="ui-tax__top"><div><small>Geschätzte Steuern 2025</small><b class="ui-big">CHF 4’969</b><span class="ui-sub">Sevelen · gemeinsam · 2 Kinder</span></div>
+  <div class="ui-donut"><span>Steuerfuss<b>245%</b></span></div></div>
+  <div class="ui-legend"><div><i style="background:#2e6b5e"></i><small>Kanton 105%</small><b>2’129</b></div><div><i style="background:#5c9e8c"></i><small>Gemeinde 118%</small><b>2’393</b></div><div><i style="background:#b8995f"></i><small>Kirche 22%</small><b>446</b></div><div><i style="background:#c0392b"></i><small>Bund</small><b>0</b></div></div>
+</div></div>
+      </div>
+    </div>
+
+    <div class="row row--rev reveal">
+      <div class="row__copy">
+        <span class="row__kicker">Kanton und Bund</span>
+        <h3>Zwei Steuern, zwei Regeln – beide berücksichtigt</h3>
+        <p>Fahrkosten, Berufskosten, Versicherungen oder Krankheitskosten: Für den Kanton und die direkte Bundessteuer gelten andere Grenzen. Steuerhilfe SG zeigt beide Werte nebeneinander.</p>
+        <ul class="ticks"><li><svg class="ic"><use href="#i-check"/></svg>Selbstbehalt 2% Kanton, 5% Bund</li><li><svg class="ic"><use href="#i-check"/></svg>Fahrkosten bis Fr. 8’000 Kanton, Fr. 3’300 Bund</li></ul>
+      </div>
+      <div class="row__media">
+        <div class="row__ui"><div class="ui">
+  <div class="ui-head"><b>Krankheitskosten</b><span class="ui-badge">Ziffer 21.1</span></div>
+  <div class="ui-row"><span>Zahnarztpraxis Grabs</span><b>1’860</b></div>
+  <div class="ui-row"><span>Franchise und Selbstbehalt</span><b>1’420</b></div>
+  <div class="ui-row"><span>Selbstbehalt</span><b class="ui-two"><span>Kanton 2%</span><small>Bund 5%</small></b></div>
+  <div class="ui-row ui-row--total"><span>Abzug</span><b class="ui-two"><span>Kanton 1’675</span><small>Bund 0</small></b></div>
+</div><div class="ui">
+  <div class="ui-head"><b>Berufskosten Martin</b><span class="ui-badge">Formular 4</span></div>
+  <div class="ui-row"><span><em>1.1</em>Öffentlicher Verkehr</span><b>1’240</b></div>
+  <div class="ui-row"><span><em>2</em>Verpflegung · 205 Tage</span><b>3’075</b></div>
+  <div class="ui-row"><span><em>3</em>Übrige Berufskosten</span><b class="ui-two"><span>Kanton 2’400</span><small>Bund 2’550</small></b></div>
+  <div class="ui-row ui-row--total"><span>Total Berufskosten</span><b class="ui-two"><span>Kanton 6’715</span><small>Bund 6’865</small></b></div>
+</div></div>
+      </div>
+    </div>
+
+    <div class="row reveal">
+      <div class="row__copy">
+        <span class="row__kicker">Übertragen</span>
+        <h3>In E-Tax SG übertragen – ohne Suchen</h3>
+        <p>Jedes Feld mit Ziffer und Feldnummer wie im amtlichen Formular. Betrag anklicken, in E-Tax SG einfügen, abhaken. So ist die Steuererklärung in Minuten eingereicht.</p>
+        <ul class="ticks"><li><svg class="ic"><use href="#i-check"/></svg>Seiten 2 bis 4 sowie Formulare 2, 4 und 6</li><li><svg class="ic"><use href="#i-check"/></svg>Fortschritt: Sie sehen, was noch fehlt</li></ul>
+      </div>
+      <div class="row__media">
+        <div class="row__ui"><div class="ui">
+  <div class="ui-head"><b>In E-Tax SG übertragen</b><span class="ui-badge">8 von 21</span></div>
+  <div class="ui-progress"><i style="width:38%"></i></div>
+  <div class="ui-field is-done"><span class="ui-check"></span><em>1.1</em><small>100</small><span>Nettolohn Person 1</span><b>85’000</b></div>
+  <div class="ui-field is-done"><span class="ui-check"></span><em>1.1</em><small>102</small><span>Nettolohn Person 2</span><b>34’750</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>10.1</em><small>438</small><span>Berufskosten</span><b>6’715</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>13.1</em><small>208</small><span>Säule 3a</span><b>7’258</b></div>
+  <div class="ui-field"><span class="ui-check"></span><em>14</em><small>600</small><span>Versicherungsprämien</span><b>9’000</b></div>
+</div></div>
+      </div>
+    </div>
+
+    <div class="row row--rev reveal">
+      <div class="row__copy">
+        <span class="row__kicker">Überblick</span>
+        <h3>Sie sehen jederzeit, was noch fehlt</h3>
+        <p>Der Fortschritt führt Sie Schritt für Schritt durch die Steuererklärung – von den Personalien bis zum Vermögen.</p>
+      </div>
+      <div class="row__media">
+        <div class="row__ui"><div class="ui">
+  <div class="ui-head"><b>Fortschritt</b><span class="ui-badge">5 von 6</span></div>
+  <div class="ui-progress"><i style="width:83%"></i></div>
+  <div class="ui-step is-done"><span class="ui-check"></span><span>Personen &amp; Familie</span></div>
+  <div class="ui-step is-done"><span class="ui-check"></span><span>Einkommen · 2 Lohnausweise</span></div>
+  <div class="ui-step is-done"><span class="ui-check"></span><span>Berufskosten</span></div>
+  <div class="ui-step"><span class="ui-check"></span><span>Belege hineinziehen</span></div>
+</div></div>
+      </div>
+    </div>
+
+    <div class="fullapp reveal">
+      <button class="fullapp__btn" data-zoom="img/overview.webp"><svg class="ic"><use href="#i-zoom"/></svg>Ganze App-Ansicht öffnen</button>
+    </div>
+  </div>
+</section>
+
+<!-- BEISPIEL -->
+<section class="sec" id="beispiel">
+  <div class="wrap example">
+    <div class="example__copy">
+      <span class="eyebrow reveal">Rechenbeispiel</span>
+      <h2 class="reveal">Familie Muster aus Sevelen<br><em>spart mit drei Tipps.</em></h2>
+      <p class="lead reveal">Zwei Erwerbseinkommen, zwei Kinder, Wohnung in Miete. Steuerhilfe SG hat die Steuern 2025 berechnet und konkrete Verbesserungen gefunden.</p>
+      <p class="small reveal">Fiktives Beispiel. Berechnung für Kantons-, Gemeinde-, Kirchen- und Bundessteuer, Steuerjahr 2025.</p>
+    </div>
+    <div class="example__card reveal">
+      <div class="ex__row ex__row--big"><span>Geschätzte Steuern</span><b>CHF 4’969</b></div>
+      <div class="ex__row"><span>Säule 3a von Anna ausschöpfen</span><b class="save">– 647</b></div>
+      <div class="ex__row"><span>Weiterbildungspauschale Martin</span><b class="save">– 59</b></div>
+      <div class="ex__row"><span>Weiterbildungspauschale Anna</span><b class="save">– 59</b></div>
+      <div class="ex__row ex__row--total"><span>Mögliche Ersparnis pro Jahr</span><b class="save">CHF 765</b></div>
+      <p class="ex__note">Grenzsteuersatz 14.7 %: Jeder abgezogene Franken spart rund 15 Rappen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DATENSCHUTZ -->
+<section class="sec sec--tint" id="datenschutz">
+  <div class="wrap privacy">
+    <div class="privacy__badge reveal"><svg class="ic"><use href="#i-cloudoff"/></svg></div>
+    <div>
+      <span class="eyebrow reveal">Datenschutz</span>
+      <h2 class="reveal">Ihre Finanzen gehören<br><em>auf Ihren Mac. Punkt.</em></h2>
+      <div class="privacy__grid">
+        <div class="pcard reveal"><svg class="ic"><use href="#i-lock"/></svg><h3>Keine Cloud</h3><p>Steuerhilfe SG hat keinen Server. Lohn, Vermögen und Belege bleiben lokal, geschützt durch FileVault.</p></div>
+        <div class="pcard reveal"><svg class="ic"><use href="#i-shield"/></svg><h3>Kein Konto</h3><p>Keine Registrierung, keine E-Mail-Adresse, kein Tracking, keine Werbung.</p></div>
+        <div class="pcard reveal"><svg class="ic"><use href="#i-scan"/></svg><h3>Lokale Texterkennung</h3><p>Belege werden mit der Technik von macOS gelesen – ohne Upload zu einem Dienst.</p></div>
+        <div class="pcard reveal"><svg class="ic"><use href="#i-repeat"/></svg><h3>Automatische Sicherung</h3><p>Täglich eine Sicherungskopie, 30 Tage lang. Export jederzeit als Datei.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERFÜGBARKEIT -->
+<section class="sec" id="verfuegbarkeit">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow reveal">Verfügbarkeit</span>
+      <h2 class="reveal">Gemacht für St.Gallen.<br><em>Andere Kantone auf Anfrage.</em></h2>
+      <p class="reveal">Steuerhilfe SG kennt die St.Galler Steuererklärung bis ins Detail: Formulare, Tarife, Abzüge und die Steuerfüsse aller Gemeinden. Deshalb ist die App derzeit ausschliesslich für den Kanton St.Gallen verfügbar.</p>
+    </div>
+    <div class="avail">
+      <div class="acard acard--live reveal">
+        <span class="badge badge--live">Verfügbar</span>
+        <h3><svg class="ic ic--flag"><use href="#i-pin"/></svg>Kanton St.Gallen</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Steuerjahr 2025 (Einreichung bis 31. März 2026)</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Steuerjahr 2026 (Werte gemäss bisher publizierten Formularen und Tarifen)</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Alle 75 Gemeinden – von Altstätten bis Wil, von Rapperswil-Jona bis Sevelen</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Kantons-, Gemeinde-, Kirchen- und direkte Bundessteuer</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Angestellte, Rentner, Familien, Eigenheim</li>
+        </ul>
+      </div>
+      <div class="acard reveal">
+        <span class="badge">Ihr Kanton?</span>
+        <h3>Version für Ihren Kanton</h3>
+        <p>Weitere Kantone sind in Vorbereitung. Wohnen Sie in einem anderen Kanton und möchten Steuerhilfe für Ihre Steuererklärung? Melden Sie sich – wir erstellen die Version für Ihren Kanton gerne auf Anfrage.</p>
+        <a class="btn btn--ghost" href="mailto:info@lweb.ch?subject=Steuerhilfe%20f%C3%BCr%20meinen%20Kanton&body=Gr%C3%BCezi%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20eine%20Version%20f%C3%BCr%20den%20Kanton%3A%20%0A%0AName%3A%20%0AWohnort%3A%20"><svg class="ic"><use href="#i-mail"/></svg>Version anfragen</a>
+      </div>
+      <div class="acard reveal">
+        <span class="badge">Systemanforderungen</span>
+        <h3>Für jeden aktuellen Mac</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-mac"/></svg>macOS 15 Sequoia oder neuer</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Apple Silicon (M1 bis M5) und Intel</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Rund 10 MB Speicherplatz</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Keine Internetverbindung nötig</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="sec sec--dark" id="download">
+  <div class="wrap dl">
+    <img class="dl__icon reveal" src="img/icon-512.png" alt="Steuerhilfe SG App-Symbol" width="168" height="168" loading="lazy">
+    <div class="dl__copy">
+      <span class="eyebrow reveal">Download</span>
+      <h2 class="reveal">Steuerhilfe SG für Mac</h2>
+      <p class="reveal">Testversion kostenlos: alles erfassen, Belege lesen lassen und die Steuern berechnen. Die Vollversion mit Übertragung in E-Tax SG, PDF-Bericht und allen Spartipps kostet <b style="color:#fff">CHF 39 pro Steuerjahr und Haushalt</b> – der Lizenzschlüssel kommt per E-Mail.</p>
+      <div class="dl__ctas reveal">
+        <a class="btn btn--light btn--lg" href="https://web.lweb.ch/ording/testversion/Steuerhilfe-SG-Testversion.dmg" download><svg class="ic"><use href="#i-down"/></svg>Testversion laden (DMG, 3 MB)</a>
+      </div>
+      <ol class="dl__steps reveal">
+        <li>DMG öffnen und Steuerhilfe SG in den Ordner «Programme» ziehen.</li>
+        <li>Steuerhilfe SG starten. Falls macOS beim ersten Start nachfragt: Rechtsklick auf Steuerhilfe SG → «Öffnen».</li>
+        <li>Steuerjahr wählen, Belege hineinziehen – fertig.</li>
+        <li>Vollversion: in Steuerhilfe SG auf «Testversion» klicken, Lizenz anfragen und den Schlüssel einfügen.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <div class="faq__head">
+      <span class="eyebrow reveal">Häufige Fragen</span>
+      <h2 class="reveal">Gut zu wissen.</h2>
+      <p class="reveal">Weitere Fragen? Schreiben Sie uns an <a href="mailto:info@lweb.ch">info@lweb.ch</a>.</p>
+    </div>
+    <div class="faq__list">
+      <details class="reveal" open><summary>Ersetzt Steuerhilfe SG E-Tax SG?</summary><p>Nein. Steuerhilfe SG bereitet die Steuererklärung vollständig vor und berechnet die Steuern. Eingereicht wird weiterhin über E-Tax SG, die Online-Steuererklärung des Kantons. Steuerhilfe SG zeigt Ihnen dafür jedes Feld mit Ziffer und Feldnummer, damit die Übertragung in wenigen Minuten erledigt ist.</p></details>
+      <details class="reveal"><summary>Wie genau ist die Berechnung?</summary><p>Steuerhilfe SG verwendet die amtliche Tariftabelle des Kantons St.Gallen, die Steuerfüsse aller 75 Gemeinden und den Tarif der direkten Bundessteuer. Die Steuerberechnung wurde mit 16’704 Werten des offiziellen Steuerrechners der Eidgenössischen Steuerverwaltung verglichen. Massgebend bleibt immer die Veranlagung durch das Steueramt.</p></details>
+      <details class="reveal"><summary>Ist Steuerhilfe SG ein Angebot des Kantons?</summary><p>Nein. Steuerhilfe SG ist eine unabhängige App von Lweb in Sevelen. Sie ist weder vom Kanton St.Gallen noch von der Eidgenössischen Steuerverwaltung herausgegeben oder geprüft.</p></details>
+      <details class="reveal"><summary>Wo werden meine Daten gespeichert?</summary><p>Ausschliesslich auf Ihrem Mac, im geschützten Bereich der App. Steuerhilfe SG sendet keine Daten ins Internet und verlangt kein Konto. Eine tägliche Sicherung wird lokal angelegt; einen Export können Sie jederzeit selbst erstellen.</p></details>
+      <details class="reveal"><summary>Ich wohne nicht im Kanton St.Gallen – gibt es eine Version für mich?</summary><p>Noch nicht. Steuerhilfe SG ist derzeit nur für den Kanton St.Gallen verfügbar, weil jeder Kanton eigene Formulare, Tarife und Abzüge hat. Weitere Kantone folgen. Schreiben Sie uns an <a href="mailto:info@lweb.ch?subject=Steuerhilfe%20f%C3%BCr%20meinen%20Kanton">info@lweb.ch</a> – wir erstellen auf Anfrage gerne eine Version für Ihren Kanton.</p></details>
+      <details class="reveal"><summary>Für wen eignet sich Steuerhilfe SG?</summary><p>Für Private und Familien im Kanton St.Gallen: Angestellte, Rentnerinnen und Rentner, Familien mit Kindern, Wohneigentum, Konten und Wertschriften. Für Selbständigerwerbende und Landwirte deckt Steuerhilfe SG erst die Grundlagen ab.</p></details>
+      <details class="reveal"><summary>Gibt es Steuerhilfe SG auch für Windows oder das iPhone?</summary><p>Steuerhilfe SG ist bewusst eine native Mac-App – schnell, offline und mit der Texterkennung von macOS. Weitere Plattformen sind derzeit nicht geplant.</p></details>
+      <details class="reveal"><summary>Was kostet Steuerhilfe SG?</summary><p>Die Testversion ist kostenlos: Sie können alles erfassen und sehen Ihren Steuerbetrag. Die Vollversion kostet CHF 39 pro Steuerjahr und Haushalt und schaltet die Übertragung in E-Tax SG, den PDF-Bericht, alle Spartipps im Detail und den Datenexport frei. Ihre Eingaben bleiben beim Freischalten erhalten.</p></details>
+      <details class="reveal"><summary>Wie erhalte ich die Vollversion?</summary><p>In Steuerhilfe SG auf «Testversion» klicken und «Lizenz bei Lweb anfragen» wählen – oder direkt an <a href="mailto:info@lweb.ch?subject=Steuerhilfe SG%20Lizenz">info@lweb.ch</a> schreiben. Sie erhalten einen persönlichen Lizenzschlüssel per E-Mail, den Sie in der App einfügen. Die Prüfung erfolgt offline, ohne Konto.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div>
+      <a class="brand brand--light" href="#top"><img src="img/icon-web.png" alt="" width="40" height="40"><span class="brand__word">Steuerhilfe SG</span></a>
+      <p class="ftr__claim">Die Steuererklärung für den Kanton St.Gallen – als Mac-App. Entwickelt in Sevelen SG von Lweb.</p>
+    </div>
+    <ul class="ftr__contact">
+      <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:info@lweb.ch">info@lweb.ch</a></li>
+      <li><svg class="ic"><use href="#i-phone"/></svg><a href="tel:+41793749032">079 374 90 32</a></li>
+      <li><svg class="ic"><use href="#i-pin"/></svg>9475 Sevelen SG</li>
+    </ul>
+  </div>
+  <div class="wrap ftr__legal">
+    <p>Steuerhilfe SG ist ein unabhängiges Produkt und kein Angebot des Kantons St.Gallen oder der Eidgenössischen Steuerverwaltung. Alle Berechnungen ohne Gewähr; massgebend ist die Veranlagung der Steuerbehörde. Bildschirmfotos mit fiktiven Beispieldaten.</p>
+    <p>© <span id="year">2026</span> Lweb, Sevelen</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="lb__close" aria-label="Schliessen"><svg class="ic"><use href="#i-x"/></svg></button>
+  <img alt="Bildschirmfoto vergrössert">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
