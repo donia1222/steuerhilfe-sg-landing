@@ -1,0 +1,11 @@
+{
+  "name": "Steuerhilfe SG",
+  "short_name": "Steuerhilfe SG",
+  "description": "Steuererklärung Kanton St.Gallen für den Mac",
+  "lang": "de-CH",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf7",
+  "theme_color": "#2e6b5e",
+  "icons": [{ "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png" }, { "src": "img/icon-web.png", "sizes": "240x240", "type": "image/png" }]
+}
