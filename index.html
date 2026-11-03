@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Steuererklärung St.Gallen auf dem Mac – Steuerhilfe SG</title>
-<meta name="description" content="Steuerhilfe SG: die Mac-App für die Steuererklärung im Kanton St.Gallen. Belege einlesen, alle Abzüge finden, Steuern für Kanton, Gemeinde und Bund genau berechnen und in E-Tax SG übertragen. Testversion kostenlos, Daten bleiben auf Ihrem Mac.">
+<title>Steuererklärung St.Gallen und Liechtenstein auf dem Mac – Steuerhilfe SG</title>
+<meta name="description" content="Steuerhilfe SG: die Mac-App für die Steuererklärung im Kanton St.Gallen – jetzt auch für Liechtenstein. Belege einlesen, alle Abzüge finden, Steuern für Kanton, Gemeinde und Bund genau berechnen und in E-Tax SG übertragen. Testversion kostenlos, Daten bleiben auf Ihrem Mac.">
 <meta name="keywords" content="Steuererklärung St.Gallen, Steuererklärung Kanton St.Gallen, E-Tax SG, Steuern St.Gallen, Steuererklärung Mac, Steuerrechner St.Gallen, Steuererklärung ausfüllen, Abzüge Steuererklärung, Säule 3a, Steuersoftware Schweiz, Steuerhilfe">
 <meta name="author" content="Lweb, Sevelen">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -24,15 +24,15 @@
 <meta property="og:site_name" content="Steuerhilfe SG">
 <meta property="og:locale" content="de_CH">
 <meta property="og:url" content="https://steuerhilfe.sg/">
-<meta property="og:title" content="Steuerhilfe SG – die St.Galler Steuererklärung, endlich einfach">
+<meta property="og:title" content="Steuerhilfe SG – die Steuererklärung für St.Gallen und Liechtenstein">
 <meta property="og:description" content="Mac-App für Familien im Kanton St.Gallen: Belege einlesen, Abzüge finden, Steuern berechnen und in E-Tax SG übertragen. Offline nutzbar, Cloud-Sicherung in der Schweiz.">
 <meta property="og:image" content="https://steuerhilfe.sg/img/og-steuerhilfe-sg.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Steuerhilfe SG – geschätzte Steuern und Sparpotenzial">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Steuerhilfe SG – die St.Galler Steuererklärung, endlich einfach">
-<meta name="twitter:description" content="Mac-App für die Steuererklärung im Kanton St.Gallen. Testversion kostenlos.">
+<meta name="twitter:title" content="Steuerhilfe SG – die Steuererklärung für St.Gallen und Liechtenstein">
+<meta name="twitter:description" content="Mac-App für die Steuererklärung im Kanton St.Gallen und in Liechtenstein. Testversion kostenlos.">
 <meta name="twitter:image" content="https://steuerhilfe.sg/img/og-steuerhilfe-sg.jpg">
 <script type="application/ld+json">
 [
@@ -62,10 +62,10 @@
    "Offline nutzbar",
    "Verschlüsselte Cloud-Sicherung in der Schweiz"
   ],
-  "areaServed": {
-   "@type": "AdministrativeArea",
-   "name": "Kanton St.Gallen, Schweiz"
-  },
+  "areaServed": [
+   { "@type": "AdministrativeArea", "name": "Kanton St.Gallen, Schweiz" },
+   { "@type": "Country", "name": "Liechtenstein" }
+  ],
   "offers": [
    {
     "@type": "Offer",
@@ -113,6 +113,16 @@
   "mainEntity": [
    {
     "@type": "Question",
+    "name": "Gibt es Steuerhilfe auch für Liechtenstein?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Ja. In derselben App auf Liechtenstein umstellen: Landes- und Gemeindesteuer, Sollertrag, alle Abzüge nach dem Liechtensteiner Steuergesetz und die Felder für eTax FL. Die Lizenz gilt für beides." }
+   },
+   {
+    "@type": "Question",
+    "name": "Ich wohne in St.Gallen und arbeite in Liechtenstein. Hilft mir Steuerhilfe?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Ja. Grenzgänger versteuern den Lohn in der Schweiz. Den Lohnausweis als «Arbeitgeber in Liechtenstein» markieren – Steuerhilfe zeigt, welche Beträge wohin gehören." }
+   },
+   {
+    "@type": "Question",
     "name": "Ersetzt Steuerhilfe SG E-Tax SG?",
     "acceptedAnswer": {
      "@type": "Answer",
@@ -148,7 +158,7 @@
     "name": "Ich wohne nicht im Kanton St.Gallen – gibt es eine Version für mich?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Noch nicht. Steuerhilfe SG ist derzeit nur für den Kanton St.Gallen verfügbar, weil jeder Kanton eigene Formulare, Tarife und Abzüge hat. Weitere Kantone folgen. Schreiben Sie uns an info@lweb.ch – wir erstellen auf Anfrage gerne eine Version für Ihren Kanton."
+     "text": "Steuerhilfe SG gibt es derzeit für den Kanton St.Gallen und für Liechtenstein, weil jeder Kanton eigene Formulare, Tarife und Abzüge hat. Weitere Kantone folgen. Schreiben Sie uns an info@lweb.ch – wir erstellen auf Anfrage gerne eine Version für Ihren Kanton."
     }
    },
    {
@@ -254,9 +264,9 @@
 <section class="hero">
   <div class="hero__glow" aria-hidden="true"></div>
   <div class="wrap hero__top">
-    <span class="pill reveal"><svg class="ic ic--flag"><use href="#i-swiss"/></svg>Exklusiv für den Kanton St.Gallen · Steuerjahr 2025 und 2026</span>
+    <span class="pill reveal"><svg class="ic ic--flag"><use href="#i-swiss"/></svg>Für den Kanton St.Gallen · jetzt auch für Liechtenstein · Steuerjahr 2025 und 2026</span>
     <h1 class="reveal">Die St.Galler Steuererklärung.<br><span class="grad">Endlich einfach.</span></h1>
-    <p class="lead reveal">Die Mac-App für Familien und Private im Kanton St.Gallen: Belege hineinziehen, alle Abzüge finden, Steuern auf den Franken genau berechnen – und Feld für Feld in E-Tax SG übertragen. Ihre Daten verlassen Ihren Mac nie.</p>
+    <p class="lead reveal">Die Mac-App für Familien und Private im Kanton St.Gallen: Belege hineinziehen, alle Abzüge finden, Steuern auf den Franken genau berechnen – und Feld für Feld in E-Tax SG übertragen. Auch für Liechtenstein und für Grenzgänger. Ihre Daten bleiben auf Ihrem Mac – auf Wunsch verschlüsselt in der Cloud in der Schweiz.</p>
     <div class="hero__ctas reveal">
       <a class="btn btn--primary btn--lg" href="#download"><svg class="ic"><use href="#i-down"/></svg>Testversion kostenlos laden</a>
       <a class="btn btn--ghost btn--lg" href="#ablauf">So funktioniert’s <svg class="ic"><use href="#i-arrow"/></svg></a>
@@ -265,6 +275,7 @@
       <li><svg class="ic"><use href="#i-mac"/></svg>macOS 15 oder neuer</li>
       <li><svg class="ic"><use href="#i-lock"/></svg>Offline nutzbar · Cloud optional</li>
       <li><svg class="ic"><use href="#i-check"/></svg>Alle 75 St.Galler Gemeinden</li>
+      <li><svg class="ic"><use href="#i-check"/></svg>Auch für Liechtenstein</li>
       <li><svg class="ic"><use href="#i-pin"/></svg>Von Lweb aus Sevelen SG</li>
     </ul>
   </div>
@@ -297,7 +308,7 @@
   </div>
 </section>
 
-<div class="band"><div class="wrap band__in"><svg class="ic"><use href="#i-pin"/></svg><span><b>Derzeit nur für den Kanton St.Gallen verfügbar.</b> Weitere Kantone folgen – oder auf Anfrage für Ihren Kanton.</span><a href="#verfuegbarkeit">Mehr erfahren</a></div></div>
+<div class="band"><div class="wrap band__in"><svg class="ic"><use href="#i-pin"/></svg><span><b>Für den Kanton St.Gallen – und neu auch für Liechtenstein.</b> Landes- und Gemeindesteuer, eTax FL, und für Grenzgänger nach Liechtenstein.</span><a href="#verfuegbarkeit">Mehr erfahren</a></div></div>
 
 <!-- TRUST -->
 <section class="trust">
@@ -435,6 +446,7 @@
       <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-repeat"/></svg></span><h3>Nächstes Jahr schneller</h3><p>Personen, Kinder, Arbeitgeber und Konten werden ins neue Steuerjahr übernommen. Nur noch Beträge ergänzen.</p></article>
       <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-pdf"/></svg></span><h3>Bericht als PDF</h3><p>Die komplette Berechnung für Ihre Unterlagen – Einkommen, Abzüge, Vermögen und Steuerbetrag auf drei Seiten.</p></article>
       <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-cloud"/></svg></span><h3>Cloud-Sicherung</h3><p>Daten und Belege verschlüsselt auf Servern in der Schweiz. Auf einem weiteren Mac mit Ihrer E-Mail anmelden – und alles ist wieder da.</p></article>
+      <article class="fcard reveal"><span class="ibox"><svg class="ic"><use href="#i-pin"/></svg></span><h3>Auch für Liechtenstein</h3><p>Oben in der App auf Liechtenstein umstellen: Landes- und Gemeindesteuer, Sollertrag, Fahrkostentabelle und Übertragung in eTax FL. Und für Grenzgänger aus St.Gallen.</p></article>
       <article class="fcard fcard--accent reveal"><span class="ibox"><svg class="ic"><use href="#i-calendar"/></svg></span><h3>Termine im Blick</h3><p>Einreichefrist, letzter Tag für die Säule 3a, Verfalltag der Steuern: Steuerhilfe SG erinnert Sie an das Wichtige.</p></article>
     </div>
   </div>
@@ -576,8 +588,8 @@
   <div class="wrap">
     <div class="sec__head">
       <span class="eyebrow reveal">Verfügbarkeit</span>
-      <h2 class="reveal">Gemacht für St.Gallen.<br><em>Andere Kantone auf Anfrage.</em></h2>
-      <p class="reveal">Steuerhilfe SG kennt die St.Galler Steuererklärung bis ins Detail: Formulare, Tarife, Abzüge und die Steuerfüsse aller Gemeinden. Deshalb ist die App derzeit ausschliesslich für den Kanton St.Gallen verfügbar.</p>
+      <h2 class="reveal">Gemacht für St.Gallen.<br><em>Und für Liechtenstein.</em></h2>
+      <p class="reveal">Steuerhilfe SG kennt die St.Galler Steuererklärung bis ins Detail: Formulare, Tarife, Abzüge und die Steuerfüsse aller Gemeinden. Und seit 2026 auch die Steuererklärung des Fürstentums Liechtenstein – in derselben App, ohne Aufpreis.</p>
     </div>
     <div class="avail">
       <div class="acard acard--live reveal">
@@ -589,6 +601,17 @@
           <li><svg class="ic"><use href="#i-check"/></svg>Alle 75 Gemeinden – von Altstätten bis Wil, von Rapperswil-Jona bis Sevelen</li>
           <li><svg class="ic"><use href="#i-check"/></svg>Kantons-, Gemeinde-, Kirchen- und direkte Bundessteuer</li>
           <li><svg class="ic"><use href="#i-check"/></svg>Angestellte, Rentner, Familien, Eigenheim</li>
+        </ul>
+      </div>
+      <div class="acard acard--live reveal">
+        <span class="badge badge--live">Neu</span>
+        <h3><svg class="ic ic--flag"><use href="#i-pin"/></svg>Fürstentum Liechtenstein</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Landes- und Gemeindesteuer, alle 11 Gemeinden</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Sollertrag, Fahrkostentabelle, Versicherungsabzüge</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Übertragung in eTax FL mit den amtlichen Feldnummern</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Grenzgänger: wohnen in St.Gallen, arbeiten in Liechtenstein</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Dieselbe App und Lizenz – Mehr auf <a href="https://steuerhilfe.li">steuerhilfe.li</a></li>
         </ul>
       </div>
       <div class="acard reveal">
@@ -647,7 +670,9 @@
       <details class="reveal"><summary>Wo werden meine Daten gespeichert?</summary><p>Auf Ihrem Mac, im geschützten Bereich der App – mit einer täglichen Sicherung, 30 Tage lang. Ohne Anmeldung sendet Steuerhilfe SG keine Daten ins Internet. Mit der Cloud-Sicherung (Vollversion) werden Daten und Belege zusätzlich verschlüsselt auf Servern in der Schweiz gespeichert. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p></details>
       <details class="reveal"><summary>Wie funktioniert die Cloud-Sicherung?</summary><p>In Steuerhilfe SG unten links auf «Mein Konto» klicken, E-Mail-Adresse eingeben und den Code aus der E-Mail einfügen – ein Passwort gibt es nicht. Danach werden Daten und Belege automatisch verschlüsselt gesichert. Auf einem weiteren Mac melden Sie sich genauso an und haben Ihre Daten, Belege und Ihre Lizenz sofort wieder. Platz: 1 GB pro Haushalt.</p></details>
       <details class="reveal"><summary>Was passiert mit der Cloud, wenn die Lizenz abläuft?</summary><p>Ihre Daten bleiben noch 12 Monate gespeichert. Neue Änderungen werden nicht mehr gesichert, Ihre Belege können Sie aber weiterhin herunterladen. 30 Tage vor dem Löschen erhalten Sie eine E-Mail. Verlängern Sie die Lizenz, geht alles normal weiter.</p></details>
-      <details class="reveal"><summary>Ich wohne nicht im Kanton St.Gallen – gibt es eine Version für mich?</summary><p>Noch nicht. Steuerhilfe SG ist derzeit nur für den Kanton St.Gallen verfügbar, weil jeder Kanton eigene Formulare, Tarife und Abzüge hat. Weitere Kantone folgen. Schreiben Sie uns an <a href="mailto:info@lweb.ch?subject=Steuerhilfe%20f%C3%BCr%20meinen%20Kanton">info@lweb.ch</a> – wir erstellen auf Anfrage gerne eine Version für Ihren Kanton.</p></details>
+      <details class="reveal"><summary>Gibt es Steuerhilfe auch für Liechtenstein?</summary><p>Ja. In derselben App stellen Sie oben in der Symbolleiste auf Liechtenstein um: Steuerhilfe rechnet dann die Landes- und Gemeindesteuer mit dem Zuschlag Ihrer Gemeinde, den Sollertrag auf dem Vermögen und alle Abzüge nach dem Liechtensteiner Steuergesetz, und zeigt jedes Feld für eTax FL. Die Lizenz gilt für beides.</p></details>
+      <details class="reveal"><summary>Ich wohne in St.Gallen und arbeite in Liechtenstein. Hilft mir Steuerhilfe?</summary><p>Ja. Als Grenzgängerin oder Grenzgänger versteuern Sie Ihren Lohn in der Schweiz (Doppelbesteuerungsabkommen Schweiz–Liechtenstein). Markieren Sie den Lohnausweis als «Arbeitgeber in Liechtenstein» – Steuerhilfe zeigt, welche Beträge aus dem Liechtensteiner Lohnausweis wohin gehören.</p></details>
+      <details class="reveal"><summary>Ich wohne nicht im Kanton St.Gallen – gibt es eine Version für mich?</summary><p>Steuerhilfe SG gibt es derzeit für den Kanton St.Gallen und für Liechtenstein, weil jeder Kanton eigene Formulare, Tarife und Abzüge hat. Weitere Kantone folgen. Schreiben Sie uns an <a href="mailto:info@lweb.ch?subject=Steuerhilfe%20f%C3%BCr%20meinen%20Kanton">info@lweb.ch</a> – wir erstellen auf Anfrage gerne eine Version für Ihren Kanton.</p></details>
       <details class="reveal"><summary>Für wen eignet sich Steuerhilfe SG?</summary><p>Für Private und Familien im Kanton St.Gallen: Angestellte, Rentnerinnen und Rentner, Familien mit Kindern, Wohneigentum, Konten und Wertschriften. Für Selbständigerwerbende und Landwirte deckt Steuerhilfe SG erst die Grundlagen ab.</p></details>
       <details class="reveal"><summary>Gibt es Steuerhilfe SG auch für iPhone und iPad?</summary><p>Eine Version für iPhone und iPad ist in Vorbereitung. Mit Ihrem Konto haben Sie dann auf allen Geräten dieselben Daten und Belege. Eine Windows-Version ist derzeit nicht geplant.</p></details>
       <details class="reveal"><summary>Was kostet Steuerhilfe SG?</summary><p>Die Testversion ist kostenlos: Sie können alles erfassen und sehen Ihren Steuerbetrag. Die Vollversion kostet CHF 99 pro Jahr und Haushalt (12 Monate ab der Aktivierung) und schaltet die Übertragung in E-Tax SG, den PDF-Bericht, alle Spartipps im Detail, den Datenexport und die verschlüsselte Cloud-Sicherung frei. Ihre Eingaben bleiben beim Freischalten erhalten.</p></details>
@@ -661,7 +686,7 @@
   <div class="wrap ftr__in">
     <div>
       <a class="brand brand--light" href="#top"><img src="img/icon-web.png" alt="" width="40" height="40"><span class="brand__word">Steuerhilfe SG</span></a>
-      <p class="ftr__claim">Die Steuererklärung für den Kanton St.Gallen – als Mac-App. Entwickelt in Sevelen SG von Lweb.</p>
+      <p class="ftr__claim">Die Steuererklärung für den Kanton St.Gallen und für Liechtenstein – als Mac-App. Entwickelt in Sevelen SG von Lweb.</p>
     </div>
     <ul class="ftr__contact">
       <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:info@lweb.ch">info@lweb.ch</a></li>
