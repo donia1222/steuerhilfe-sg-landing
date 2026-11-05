@@ -458,3 +458,29 @@ details p { padding-bottom: 20px; color: var(--ink-2); }
 .brand img { width: 50px; height: 50px; border-radius: 12px; margin: 0; box-shadow: 0 4px 12px -4px rgba(16,35,32,.35); }
 .hdr__in { height: 76px; }
 @media (max-width: 680px) { .brand img { width: 42px; height: 42px; border-radius: 10px; } .hdr__in { height: 66px; } }
+
+/* ---------- Mobil: iPad + iPhone (05/11/2026) ---------- */
+.mob { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(36px, 6vw, 80px); align-items: center; }
+.mob__devs { position: relative; padding: 0 12% 10% 0; }
+.mob__ipad { border-radius: clamp(22px, 3vw, 36px); background: #15191a; padding: clamp(8px, 1.1vw, 14px); box-shadow: var(--sh-lg); }
+.mob__ipad img { display: block; width: 100%; height: auto; border-radius: clamp(14px, 2vw, 24px); }
+.mob__phone { position: absolute; right: 0; bottom: 0; width: 32%; border-radius: clamp(24px, 3.4vw, 42px); background: #15191a; padding: clamp(5px, .7vw, 8px); box-shadow: 0 30px 60px -18px rgba(0, 0, 0, .45), 0 0 0 1px rgba(255, 255, 255, .06) inset; }
+.mob__phone img { display: block; width: 100%; height: auto; border-radius: clamp(19px, 2.8vw, 35px); }
+.mob__phone::before { content: ""; position: absolute; top: clamp(9px, 1.3vw, 16px); left: 50%; width: 30%; height: clamp(8px, 1.1vw, 13px); transform: translateX(-50%); border-radius: 99px; background: #15191a; }
+.mob__copy h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; letter-spacing: -.035em; margin-top: 14px; line-height: 1.05; }
+.mob__copy h2 em { font-style: normal; color: var(--brand); }
+.mob__copy > p { margin-top: 18px; color: var(--muted); font-size: 18px; line-height: 1.6; }
+.mob__chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; padding: 0; list-style: none; }
+.mob__chips li { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-dark); font-weight: 600; }
+.mob__chips .ic { width: 18px; height: 18px; color: var(--brand); }
+.mob__note { display: flex; align-items: center; gap: 10px; margin-top: 22px; font-weight: 600; color: var(--ink-2); }
+.mob__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--brand); box-shadow: 0 0 0 0 var(--brand); animation: mobPuls 2s infinite; }
+@keyframes mobPuls { 70% { box-shadow: 0 0 0 9px rgba(0, 0, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+@media (max-width: 900px) {
+  .mob { grid-template-columns: 1fr; }
+  .mob__devs { max-width: 560px; margin: 0 auto; width: 100%; }
+  .mob__copy { text-align: center; }
+  .mob__copy .eyebrow { justify-content: center; }
+  .mob__chips, .mob__note { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { .mob__dot { animation: none; } }
