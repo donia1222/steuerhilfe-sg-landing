@@ -199,7 +199,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20261107">
 <!-- Vercel Web Analytics (ohne Cookies) -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>
@@ -232,7 +232,7 @@
     <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8v6M8 11h6"/></symbol>
     <symbol id="i-cloudoff" viewBox="0 0 24 24"><path d="M3 3l18 18M8 7.5A5.5 5.5 0 0 1 17.6 10 4 4 0 0 1 20 17M17 19H7a4.5 4.5 0 0 1-1.6-8.7"/></symbol>
     <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10.5a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.3 10.2 4 4 0 0 0 7 18z"/><path d="M10 13.5h4v3h-4zM11 13.5V12a1 1 0 0 1 2 0v1.5"/></symbol>
-    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol><symbol id="i-swiss" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#d52b1e" stroke="none"/><path d="M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z" fill="#fff" stroke="none"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol><symbol id="i-li" viewBox="0 0 32 32"><path d="M7 0h18a7 7 0 0 1 7 7v9H0V7a7 7 0 0 1 7-7z" fill="#002B7F" stroke="none"/><path d="M0 16h32v9a7 7 0 0 1-7 7H7a7 7 0 0 1-7-7z" fill="#CE1126" stroke="none"/><path d="M7 11.5 8 7l2.2 2.4L12 6.5l1.8 2.9L16 7l1 4.5z" fill="#E5B82E" stroke="none"/><rect x="7" y="11.5" width="10" height="1.6" fill="#E5B82E" stroke="none"/></symbol><symbol id="i-swiss" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#d52b1e" stroke="none"/><path d="M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z" fill="#fff" stroke="none"/></symbol>
   </defs>
 </svg>
 
@@ -250,9 +250,9 @@
       <a href="#faq">FAQ</a>
     </nav>
     <a class="btn btn--primary btn--sm hdr__cta" href="app/">Jetzt starten <svg class="ic"><use href="#i-arrow"/></svg></a>
-    <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
   </div>
-  <div class="mnav" hidden>
+  <div class="mnav" id="mnav" hidden>
     <a href="#funktionen">Funktionen</a><a href="#ablauf">So geht’s</a><a href="#datenschutz">Datenschutz</a><a href="#verfuegbarkeit">Verfügbarkeit</a><a href="#faq">FAQ</a>
     <a class="btn btn--primary" href="app/">Jetzt starten</a>
   </div>
@@ -602,23 +602,6 @@
           <li><svg class="ic"><use href="#i-check"/></svg>Angestellte, Rentner, Familien, Eigenheim</li>
         </ul>
       </div>
-      <div class="acard acard--live reveal">
-        <span class="badge badge--live">Neu</span>
-        <h3><svg class="ic"><use href="#i-globe"/></svg>Im Browser</h3>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg>Für alle Geräte: Mac, Windows, Linux, iPhone, iPad und Android</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Ohne Installation – in jedem aktuellen Browser</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Anmelden mit E-Mail und Code, ohne Passwort</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Dieselbe Lizenz und dieselben Angaben wie in der Mac-App</li>
-        </ul>
-        <a class="btn btn--primary" href="app/">Jetzt starten <svg class="ic"><use href="#i-arrow"/></svg></a>
-      </div>
-      <div class="acard reveal">
-        <span class="badge">In Vorbereitung</span>
-        <h3>Liechtenstein und weitere Kantone</h3>
-        <p>An einer Version für das Fürstentum Liechtenstein arbeiten wir bereits – sie folgt, sobald die Berechnung geprüft ist. Weitere Kantone sind in Vorbereitung. Wohnen Sie in einem anderen Kanton und möchten Steuerhilfe für Ihre Steuererklärung? Melden Sie sich – wir erstellen die Version für Ihren Kanton gerne auf Anfrage.</p>
-        <a class="btn btn--ghost" href="mailto:info@lweb.ch?subject=Steuerhilfe%20f%C3%BCr%20meinen%20Kanton&body=Gr%C3%BCezi%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20eine%20Version%20f%C3%BCr%20den%20Kanton%3A%20%0A%0AName%3A%20%0AWohnort%3A%20"><svg class="ic"><use href="#i-mail"/></svg>Version anfragen</a>
-      </div>
       <div class="acard reveal">
         <span class="badge">Systemanforderungen</span>
         <h3>Mac-App: jeder aktuelle Mac</h3>
@@ -638,13 +621,16 @@
   <div class="wrap dl">
     <img class="dl__icon reveal" src="img/icon-512.png" alt="Steuerhilfe SG App-Symbol" width="168" height="168" loading="lazy">
     <div class="dl__copy">
-      <span class="eyebrow reveal">Download</span>
-      <h2 class="reveal">Desktop-Version für Mac</h2>
+      <span class="eyebrow reveal">Loslegen</span>
+      <h2 class="reveal">Im Browser oder auf dem Mac</h2>
       <p class="reveal">Testversion kostenlos: alles erfassen, Belege lesen lassen und die Steuern berechnen. Die Vollversion mit Übertragung in E-Tax SG, PDF-Bericht, allen Spartipps und verschlüsselter Cloud-Sicherung kostet <b style="color:#fff">CHF 99 pro Jahr und Haushalt</b> – der Lizenzschlüssel kommt per E-Mail und gilt 12 Monate ab der Aktivierung.</p>
-      <div class="dl__ctas reveal">
-        <a class="btn btn--light btn--lg" href="download/Steuerhilfe-SG-Testversion.dmg" download><svg class="ic"><use href="#i-down"/></svg>Testversion laden (DMG, 5 MB)</a>
+      <div class="dl__ctas dl__ctas--two reveal">
+        <a class="btn btn--light btn--lg" href="app/"><svg class="ic"><use href="#i-globe"/></svg>Im Browser starten</a>
+        <a class="btn btn--outline btn--lg" href="download/Steuerhilfe-SG-Testversion.dmg" download><svg class="ic"><use href="#i-down"/></svg>Für Mac laden (DMG, 5 MB)</a>
       </div>
-      <p class="reveal dl__alt">Lieber ohne Installation? <a href="app/">Steuerhilfe im Browser starten</a> – auf jedem Gerät.</p>
+      <p class="reveal dl__alt">Im Browser auf Mac, Windows, Linux, iPhone, iPad und Android – ohne Installation, Anmeldung mit E-Mail und Code. Dieselbe Lizenz und dieselben Angaben wie in der Mac-App.</p>
+      <p class="reveal dl__soon"><svg class="ic ic--flag"><use href="#i-li"/></svg>Bald auch für Liechtenstein – wir arbeiten daran.</p>
+      <p class="reveal dl__stepshead">Mac-App installieren:</p>
       <ol class="dl__steps reveal">
         <li>DMG öffnen und Steuerhilfe SG in den Ordner «Programme» ziehen.</li>
         <li>Steuerhilfe SG starten. Falls macOS beim ersten Start nachfragt: Rechtsklick auf Steuerhilfe SG → «Öffnen».</li>
@@ -707,6 +693,6 @@
   <img alt="Bildschirmfoto vergrössert">
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20261107"></script>
 </body>
 </html>

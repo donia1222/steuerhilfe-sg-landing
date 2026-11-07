@@ -11,9 +11,24 @@
 
   // Mobiles Menü
   const burger = $('.burger'), mnav = $('.mnav');
-  const setMenu = (open) => { mnav.hidden = !open; burger.setAttribute('aria-expanded', String(open)); };
-  burger.addEventListener('click', () => setMenu(mnav.hidden));
+  let menuTimer;
+  const isOpen = () => burger.getAttribute('aria-expanded') === 'true';
+  const setMenu = (open) => {
+    clearTimeout(menuTimer);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Menü schliessen' : 'Menü öffnen');
+    if (open) {
+      mnav.hidden = false;
+      requestAnimationFrame(() => requestAnimationFrame(() => mnav.classList.add('is-open')));
+    } else {
+      mnav.classList.remove('is-open');
+      menuTimer = setTimeout(() => { if (!isOpen()) mnav.hidden = true; }, reduced ? 0 : 300);
+    }
+  };
+  burger.addEventListener('click', () => setMenu(!isOpen()));
   $$('a', mnav).forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen()) { setMenu(false); burger.focus(); } });
+  document.addEventListener('click', (e) => { if (isOpen() && !e.target.closest('.hdr')) setMenu(false); });
 
   // Einblenden
   const obs = new IntersectionObserver((es) => es.forEach((e) => {

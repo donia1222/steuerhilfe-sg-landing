@@ -68,9 +68,20 @@ p { margin: 0; }
 .nav { display: flex; gap: 4px; margin-left: auto; }
 .nav a { padding: 8px 12px; border-radius: 10px; color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 15px; }
 .nav a:hover { background: rgba(16, 35, 32, .05); color: var(--ink); }
-.burger { display: none; width: 42px; height: 42px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); place-items: center; gap: 4px; padding: 0; cursor: pointer; margin-left: auto; }
-.burger span { display: block; width: 18px; height: 2px; background: var(--ink); border-radius: 2px; margin: 2px auto; }
-.mnav { display: grid; gap: 2px; padding: 8px 24px 20px; border-top: 1px solid var(--line); background: var(--bg); }
+.burger { display: none; position: relative; width: 42px; height: 42px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); padding: 0; cursor: pointer; margin-left: auto; transition: border-color .2s, box-shadow .2s; }
+.burger:hover { border-color: #c9d3cd; }
+/* drei Striche, der mittlere kürzer; offen werden sie zum X */
+.burger span { position: absolute; top: 50%; left: 50%; width: 18px; height: 2px; margin: -1px 0 0 -9px; background: var(--ink); border-radius: 2px; transition: transform .32s var(--ease), opacity .2s, width .32s var(--ease); }
+.burger span:nth-child(1) { transform: translateY(-6px); }
+.burger span:nth-child(2) { width: 12px; }
+.burger span:nth-child(3) { transform: translateY(6px); }
+.burger[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; width: 0; }
+.burger[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg); }
+/* Menü schwebt unter der Kopfzeile und blendet weich ein und aus */
+.mnav { position: absolute; left: 0; right: 0; top: 100%; display: grid; gap: 2px; padding: 8px 24px 20px; border-top: 1px solid var(--line); background: var(--bg); box-shadow: 0 18px 30px -18px rgba(15, 26, 51, .25); max-height: calc(100vh - 80px); overflow: auto;
+  opacity: 0; transform: translateY(-8px); transition: opacity .25s var(--ease), transform .3s var(--ease); }
+.mnav.is-open { opacity: 1; transform: none; }
 .mnav[hidden] { display: none; }
 .mnav a:not(.btn) { padding: 13px 4px; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); font-weight: 600; }
 .mnav .btn { margin-top: 12px; }
@@ -199,7 +210,7 @@ p { margin: 0; }
 .pcard p { font-size: 14.5px; color: var(--muted); }
 
 /* Verfügbarkeit */
-.avail { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 16px; }
+.avail { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; }
 .acard { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 28px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
 .acard--live { border-color: rgba(46, 107, 94, .4); box-shadow: 0 0 0 4px rgba(46, 107, 94, .07); }
 .acard h3 { font-size: 21px; display: flex; align-items: center; gap: 10px; }
@@ -254,6 +265,7 @@ details p { padding-bottom: 20px; color: var(--ink-2); }
 .js .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .mnav, .burger span { transition: none; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
 }
 
@@ -491,3 +503,11 @@ details p { padding-bottom: 20px; color: var(--ink-2); }
 .acard .btn { margin-top: 16px; }
 .dl__alt { margin: 14px 0 0; color: rgba(255,255,255,.75); font-size: 15px; }
 .dl__alt a { color: #fff; font-weight: 600; }
+
+/* 07/11/2026 · Loslegen: Browser und Mac nebeneinander, Liechtenstein als kleiner Hinweis */
+.dl__ctas--two { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 0; }
+.btn--outline { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .45); }
+.btn--outline:hover { border-color: #fff; background: rgba(255, 255, 255, .06); transform: translateY(-1px); }
+.dl .dl__soon { display: flex; align-items: center; gap: 8px; margin: 10px 0 0; font-size: 14px; color: rgba(255, 255, 255, .6); }
+.dl .dl__stepshead { margin: 26px 0 8px; font-size: 14.5px; font-weight: 600; color: rgba(255, 255, 255, .85); }
+@media (max-width: 600px) { .dl__ctas--two .btn { width: 100%; } }
