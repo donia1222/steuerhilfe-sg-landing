@@ -1,0 +1,460 @@
+{
+ "jahr": 2025,
+ "vorlaeufig": false,
+ "quelle": "Steuergesetz FL 640.0 (Fassung 01.07.2026), Wegleitung 2025, Gemeinderatsbeschlüsse Nov. 2025",
+ "sollertragProzent": 4,
+ "tarif": {
+  "alleinstehend": [
+   {
+    "bis": 15855,
+    "satz": 0,
+    "abzug": 0
+   },
+   {
+    "bis": 21140,
+    "satz": 0.01,
+    "abzug": 159
+   },
+   {
+    "bis": 42280,
+    "satz": 0.03,
+    "abzug": 581
+   },
+   {
+    "bis": 73990,
+    "satz": 0.04,
+    "abzug": 1004
+   },
+   {
+    "bis": 105700,
+    "satz": 0.05,
+    "abzug": 1744
+   },
+   {
+    "bis": 137410,
+    "satz": 0.06,
+    "abzug": 2801
+   },
+   {
+    "bis": 169120,
+    "satz": 0.065,
+    "abzug": 3488
+   },
+   {
+    "bis": 211400,
+    "satz": 0.07,
+    "abzug": 4334
+   },
+   {
+    "bis": null,
+    "satz": 0.08,
+    "abzug": 6448
+   }
+  ],
+  "alleinerziehend": [
+   {
+    "bis": 23783,
+    "satz": 0,
+    "abzug": 0
+   },
+   {
+    "bis": 31710,
+    "satz": 0.01,
+    "abzug": 238
+   },
+   {
+    "bis": 63420,
+    "satz": 0.03,
+    "abzug": 872
+   },
+   {
+    "bis": 110985,
+    "satz": 0.04,
+    "abzug": 1506
+   },
+   {
+    "bis": 158550,
+    "satz": 0.05,
+    "abzug": 2616
+   },
+   {
+    "bis": 206115,
+    "satz": 0.06,
+    "abzug": 4202
+   },
+   {
+    "bis": 253680,
+    "satz": 0.065,
+    "abzug": 5232
+   },
+   {
+    "bis": 317100,
+    "satz": 0.07,
+    "abzug": 6501
+   },
+   {
+    "bis": null,
+    "satz": 0.08,
+    "abzug": 9672
+   }
+  ],
+  "verheiratet": [
+   {
+    "bis": 31710,
+    "satz": 0,
+    "abzug": 0
+   },
+   {
+    "bis": 42280,
+    "satz": 0.01,
+    "abzug": 317
+   },
+   {
+    "bis": 84560,
+    "satz": 0.03,
+    "abzug": 1163
+   },
+   {
+    "bis": 147980,
+    "satz": 0.04,
+    "abzug": 2008
+   },
+   {
+    "bis": 211400,
+    "satz": 0.05,
+    "abzug": 3488
+   },
+   {
+    "bis": 274820,
+    "satz": 0.06,
+    "abzug": 5602
+   },
+   {
+    "bis": 338240,
+    "satz": 0.065,
+    "abzug": 6976
+   },
+   {
+    "bis": 422800,
+    "satz": 0.07,
+    "abzug": 8667
+   },
+   {
+    "bis": null,
+    "satz": 0.08,
+    "abzug": 12895
+   }
+  ]
+ },
+ "gemeinden": [
+  {
+   "name": "Balzers",
+   "zuschlag": 150
+  },
+  {
+   "name": "Eschen",
+   "zuschlag": 160
+  },
+  {
+   "name": "Gamprin",
+   "zuschlag": 150
+  },
+  {
+   "name": "Mauren",
+   "zuschlag": 160
+  },
+  {
+   "name": "Planken",
+   "zuschlag": 150
+  },
+  {
+   "name": "Ruggell",
+   "zuschlag": 160
+  },
+  {
+   "name": "Schaan",
+   "zuschlag": 150
+  },
+  {
+   "name": "Schellenberg",
+   "zuschlag": 150
+  },
+  {
+   "name": "Triesen",
+   "zuschlag": 150
+  },
+  {
+   "name": "Triesenberg",
+   "zuschlag": 150
+  },
+  {
+   "name": "Vaduz",
+   "zuschlag": 150
+  }
+ ],
+ "gewinnungskostenPauschal": 1600,
+ "verpflegungProTag": 5,
+ "verpflegungMax": 1100,
+ "fahrRappenBis10000": 50,
+ "fahrRappenUeber10000": 40,
+ "fahrMaxKmProTag": 200,
+ "fahrMaxTage": 220,
+ "pensionskasseMaxProzent": 18,
+ "privatAlleinstehend": 3700,
+ "privatVerheiratet": 7400,
+ "privatKindBis16": 700,
+ "privatKind17bis20": 1600,
+ "privatKindAb21": 2200,
+ "kinderabzug": 12700,
+ "ausbildungKindMax": 12700,
+ "krankheitMaxProPerson": 6300,
+ "spendenMaxProzent": 10,
+ "spendeMinEinzel": 100,
+ "weiterbildungMax": 12700,
+ "rentenFreibetragProzent": 70,
+ "hausratFahrzeugFreibetragVerheiratet": 52800,
+ "hausratFahrzeugFreibetragUebrige": 26400,
+ "fahrzeugAbschreibungProzent": 35,
+ "fahrkostenOrte": [
+  "Balzers",
+  "Triesen",
+  "Triesenberg",
+  "Vaduz",
+  "Schaan",
+  "Planken",
+  "Eschen",
+  "Nendeln",
+  "Mauren",
+  "Schaanwald",
+  "Gamprin",
+  "Bendern",
+  "Schellenberg",
+  "Ruggell"
+ ],
+ "fahrkostenMatrix": [
+  [
+   0,
+   1220,
+   2150,
+   1880,
+   2670,
+   3660,
+   4280,
+   3720,
+   4390,
+   4210,
+   4060,
+   3810,
+   4810,
+   4690
+  ],
+  [
+   1220,
+   0,
+   950,
+   770,
+   1570,
+   2560,
+   3110,
+   2640,
+   3290,
+   3070,
+   2890,
+   2670,
+   3710,
+   3550
+  ],
+  [
+   2150,
+   950,
+   0,
+   1370,
+   2230,
+   3220,
+   3840,
+   3250,
+   3950,
+   3770,
+   3550,
+   3370,
+   4370,
+   4250
+  ],
+  [
+   1880,
+   770,
+   1370,
+   0,
+   800,
+   1760,
+   2340,
+   1880,
+   2520,
+   2300,
+   2120,
+   1900,
+   2930,
+   2780
+  ],
+  [
+   2670,
+   1570,
+   2230,
+   800,
+   0,
+   990,
+   1610,
+   1030,
+   1730,
+   1540,
+   1320,
+   1150,
+   2150,
+   2030
+  ],
+  [
+   3660,
+   2560,
+   3220,
+   1760,
+   990,
+   0,
+   2470,
+   1930,
+   2800,
+   2400,
+   2320,
+   2150,
+   3050,
+   3030
+  ],
+  [
+   4280,
+   3110,
+   3840,
+   2340,
+   1610,
+   2470,
+   0,
+   550,
+   400,
+   930,
+   750,
+   510,
+   880,
+   1390
+  ],
+  [
+   3720,
+   2640,
+   3250,
+   1880,
+   1030,
+   1930,
+   550,
+   0,
+   880,
+   490,
+   1240,
+   990,
+   1970,
+   1880
+  ],
+  [
+   4390,
+   3290,
+   3950,
+   2520,
+   1730,
+   2800,
+   400,
+   880,
+   0,
+   530,
+   1150,
+   910,
+   490,
+   1790
+  ],
+  [
+   4210,
+   3070,
+   3770,
+   2300,
+   1540,
+   2400,
+   930,
+   490,
+   530,
+   0,
+   1730,
+   1490,
+   1020,
+   2370
+  ],
+  [
+   4060,
+   2890,
+   3550,
+   2120,
+   1320,
+   2320,
+   750,
+   1240,
+   1150,
+   1730,
+   0,
+   310,
+   730,
+   660
+  ],
+  [
+   3810,
+   2670,
+   3370,
+   1900,
+   1150,
+   2150,
+   510,
+   990,
+   910,
+   1490,
+   310,
+   0,
+   1040,
+   950
+  ],
+  [
+   4810,
+   3710,
+   4370,
+   2930,
+   2150,
+   3050,
+   880,
+   1970,
+   490,
+   1020,
+   730,
+   1040,
+   0,
+   840
+  ],
+  [
+   4690,
+   3550,
+   4250,
+   2780,
+   2030,
+   3030,
+   1390,
+   1880,
+   1790,
+   2370,
+   660,
+   950,
+   840,
+   0
+  ]
+ ]
+}

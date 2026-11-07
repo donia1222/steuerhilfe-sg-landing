@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Steuerhilfe · Steuererklärung im Browser</title>
+<meta name="description" content="Steuerhilfe im Browser: Steuererklärung Kanton St.Gallen ausfüllen, Steuern berechnen und Abzüge finden. Anmelden mit E-Mail, Daten verschlüsselt gesichert.">
+<meta name="robots" content="noindex, follow">
+<!-- Nur eigene Skripte; Daten nur an den eigenen Server. Schützt Sitzung und Schlüssel, falls je etwas Fremdes in die Seite käme. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://web.lweb.ch http://127.0.0.1:8899; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+<meta name="theme-color" content="#2e6b5e">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!-- Steuerhilfe Web (06/11/2026). La misma app que la de Mac, en el navegador.
+     Motor en engine/ (probado contra la Mac y la ESTV), datos en js/store.js, login y nube cifrada
+     en js/cloud.js (mismo bloque «daten» que la Mac; LZFSE en js/lzfse.js). Login obligatorio: js/login.js. -->
+<div id="app" class="app">
+  <noscript><p class="noscript">Steuerhilfe braucht JavaScript. Bitte aktivieren Sie es in Ihrem Browser.</p></noscript>
+  <div class="boot" data-boot><img src="../img/icon-192.png" alt="" width="72" height="72"><p>Steuerhilfe wird geladen …</p></div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

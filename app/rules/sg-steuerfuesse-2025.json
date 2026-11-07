@@ -1,0 +1,1088 @@
+{
+ "year": 2025,
+ "kantonSteuerfuss": 105,
+ "christkatholisch": 24,
+ "vermoegenEinfacheSteuerPromille": 1.7,
+ "municipalities": [
+  {
+   "name": "St. Gallen",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 138,
+   "parishes": [
+    {
+     "name": "St. Gallen Centrum (C)",
+     "kath": 26,
+     "evang": 25
+    },
+    {
+     "name": "St. Gallen Tablat (O)",
+     "kath": 26,
+     "evang": 25
+    },
+    {
+     "name": "St. Gallen Straubenzell (W)",
+     "kath": 26,
+     "evang": 26
+    }
+   ]
+  },
+  {
+   "name": "Wittenbach",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 123,
+   "parishes": [
+    {
+     "name": "Wittenbach",
+     "kath": 25,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Häggenschwil",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 115,
+   "parishes": [
+    {
+     "name": "Häggenschwil",
+     "kath": 24,
+     "evang": 18
+    }
+   ]
+  },
+  {
+   "name": "Muolen",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 116,
+   "parishes": [
+    {
+     "name": "Muolen",
+     "kath": 24,
+     "evang": 20
+    }
+   ]
+  },
+  {
+   "name": "Mörschwil",
+   "grundsteuerPromille": 0.2,
+   "steuerfuss": 70,
+   "parishes": [
+    {
+     "name": "Mörschwil",
+     "kath": 16,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Goldach",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 95,
+   "parishes": [
+    {
+     "name": "Goldach",
+     "kath": 22,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Steinach",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 122,
+   "parishes": [
+    {
+     "name": "Steinach",
+     "kath": 22,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Berg",
+   "grundsteuerPromille": 0.3,
+   "steuerfuss": 123,
+   "parishes": [
+    {
+     "name": "Berg",
+     "kath": 22,
+     "evang": 18
+    }
+   ]
+  },
+  {
+   "name": "Tübach",
+   "grundsteuerPromille": 0.2,
+   "steuerfuss": 79,
+   "parishes": [
+    {
+     "name": "Tübach",
+     "kath": 24,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Untereggen",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 119,
+   "parishes": [
+    {
+     "name": "Untereggen",
+     "kath": 22,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Eggersriet",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 120,
+   "parishes": [
+    {
+     "name": "Eggersriet",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Rorschacherberg",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 100,
+   "parishes": [
+    {
+     "name": "Rorschacherberg",
+     "kath": 22,
+     "evang": 26
+    }
+   ]
+  },
+  {
+   "name": "Rorschach",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 129,
+   "parishes": [
+    {
+     "name": "Rorschach",
+     "kath": 22,
+     "evang": 26
+    }
+   ]
+  },
+  {
+   "name": "Thal",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 89,
+   "parishes": [
+    {
+     "name": "Thal",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Rheineck",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 113,
+   "parishes": [
+    {
+     "name": "Rheineck",
+     "kath": 25,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "St. Margrethen",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 109,
+   "parishes": [
+    {
+     "name": "St. Margrethen",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Au",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 93,
+   "parishes": [
+    {
+     "name": "Au",
+     "kath": 21,
+     "evang": 25
+    },
+    {
+     "name": "Heerbrugg",
+     "kath": 18,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Berneck",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 92,
+   "parishes": [
+    {
+     "name": "Berneck",
+     "kath": 18,
+     "evang": 25
+    },
+    {
+     "name": "Heerbrugg",
+     "kath": 18,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Balgach",
+   "grundsteuerPromille": 0.5,
+   "steuerfuss": 61,
+   "parishes": [
+    {
+     "name": "Balgach",
+     "kath": 17,
+     "evang": 25
+    },
+    {
+     "name": "Heerbrugg",
+     "kath": 18,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Diepoldsau",
+   "grundsteuerPromille": 0.5,
+   "steuerfuss": 85,
+   "parishes": [
+    {
+     "name": "Diepoldsau",
+     "kath": 19,
+     "evang": 23
+    }
+   ]
+  },
+  {
+   "name": "Widnau",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 76,
+   "parishes": [
+    {
+     "name": "Widnau",
+     "kath": 17,
+     "evang": 23
+    }
+   ]
+  },
+  {
+   "name": "Rebstein",
+   "grundsteuerPromille": 0.7,
+   "steuerfuss": 108,
+   "parishes": [
+    {
+     "name": "Rebstein",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Marbach",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 102,
+   "parishes": [
+    {
+     "name": "Marbach",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Altstätten",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 107,
+   "parishes": [
+    {
+     "name": "Altstätten",
+     "kath": 19,
+     "evang": 28
+    },
+    {
+     "name": "Lüchingen",
+     "kath": 21,
+     "evang": 28
+    },
+    {
+     "name": "Lienz",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Eichberg",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 104,
+   "parishes": [
+    {
+     "name": "Eichberg",
+     "kath": 19,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Oberriet",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 95,
+   "parishes": [
+    {
+     "name": "Oberriet",
+     "kath": 25,
+     "evang": 28
+    },
+    {
+     "name": "Kriessern",
+     "kath": 24,
+     "evang": 23
+    },
+    {
+     "name": "Montlingen",
+     "kath": 25,
+     "evang": 28
+    },
+    {
+     "name": "Kobelwald",
+     "kath": 25,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Rüthi",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 109,
+   "parishes": [
+    {
+     "name": "Rüthi",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Sennwald",
+   "grundsteuerPromille": 0.5,
+   "steuerfuss": 70,
+   "parishes": [
+    {
+     "name": "Sennwald",
+     "kath": 16,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Gams",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 115,
+   "parishes": [
+    {
+     "name": "Gams",
+     "kath": 24,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Grabs",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 100,
+   "parishes": [
+    {
+     "name": "Grabs",
+     "kath": 18,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Buchs",
+   "grundsteuerPromille": 0.7,
+   "steuerfuss": 118,
+   "parishes": [
+    {
+     "name": "Buchs",
+     "kath": 18,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Sevelen",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 118,
+   "parishes": [
+    {
+     "name": "Sevelen",
+     "kath": 20,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Wartau",
+   "grundsteuerPromille": 0.7,
+   "steuerfuss": 145,
+   "parishes": [
+    {
+     "name": "Wartau",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Sargans",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 129,
+   "parishes": [
+    {
+     "name": "Sargans",
+     "kath": 21,
+     "evang": 22
+    }
+   ]
+  },
+  {
+   "name": "Vilters-Wangs",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 120,
+   "parishes": [
+    {
+     "name": "Vilters",
+     "kath": 24,
+     "evang": 22
+    },
+    {
+     "name": "Wangs",
+     "kath": 22,
+     "evang": 22
+    }
+   ]
+  },
+  {
+   "name": "Bad Ragaz",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 92,
+   "parishes": [
+    {
+     "name": "Bad Ragaz",
+     "kath": 17,
+     "evang": 22
+    }
+   ]
+  },
+  {
+   "name": "Pfäfers",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 139,
+   "parishes": [
+    {
+     "name": "Pfäfers",
+     "kath": 24,
+     "evang": 22
+    },
+    {
+     "name": "Valens-Vasön",
+     "kath": 24,
+     "evang": 22
+    },
+    {
+     "name": "Vättis",
+     "kath": 24,
+     "evang": 22
+    }
+   ]
+  },
+  {
+   "name": "Mels",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 125,
+   "parishes": [
+    {
+     "name": "Mels",
+     "kath": 20,
+     "evang": 22
+    },
+    {
+     "name": "Weisstannen",
+     "kath": 24,
+     "evang": 22
+    }
+   ]
+  },
+  {
+   "name": "Flums",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 125,
+   "parishes": [
+    {
+     "name": "Flums",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Walenstadt",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 110,
+   "parishes": [
+    {
+     "name": "Walenstadt",
+     "kath": 24,
+     "evang": 24
+    },
+    {
+     "name": "Tscherlach",
+     "kath": 24,
+     "evang": 24
+    },
+    {
+     "name": "Berschis",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Quarten",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 102,
+   "parishes": [
+    {
+     "name": "Quarten",
+     "kath": 25,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Amden",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 103,
+   "parishes": [
+    {
+     "name": "Amden",
+     "kath": 25,
+     "evang": 27
+    },
+    {
+     "name": "Fli (Weesen)",
+     "kath": 26,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Weesen",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 115,
+   "parishes": [
+    {
+     "name": "Weesen",
+     "kath": 26,
+     "evang": 27
+    }
+   ]
+  },
+  {
+   "name": "Schänis",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 125,
+   "parishes": [
+    {
+     "name": "Schänis",
+     "kath": 25,
+     "evang": 22.5
+    }
+   ]
+  },
+  {
+   "name": "Benken",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 117,
+   "parishes": [
+    {
+     "name": "Benken",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Kaltbrunn",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 106,
+   "parishes": [
+    {
+     "name": "Kaltbrunn",
+     "kath": 21,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Gommiswald",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 103,
+   "parishes": [
+    {
+     "name": "Gommiswald",
+     "kath": 24,
+     "evang": 24
+    },
+    {
+     "name": "Ricken",
+     "kath": 24,
+     "evang": 24
+    },
+    {
+     "name": "Gebertingen",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Uznach",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 110,
+   "parishes": [
+    {
+     "name": "Uznach",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Schmerikon",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 113,
+   "parishes": [
+    {
+     "name": "Schmerikon",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Rapperswil-Jona",
+   "grundsteuerPromille": 0.3,
+   "steuerfuss": 74,
+   "parishes": [
+    {
+     "name": "Rapperswil-Jona",
+     "kath": 19,
+     "evang": 20
+    }
+   ]
+  },
+  {
+   "name": "Eschenbach",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 117,
+   "parishes": [
+    {
+     "name": "Eschenbach",
+     "kath": 24,
+     "evang": 24
+    }
+   ]
+  },
+  {
+   "name": "Wildhaus-Alt St. Johann",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 118,
+   "parishes": [
+    {
+     "name": "Alt St. Johann",
+     "kath": 26,
+     "evang": 28
+    },
+    {
+     "name": "Wildhaus",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Nesslau",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 114,
+   "parishes": [
+    {
+     "name": "Nesslau",
+     "kath": 20,
+     "evang": 28
+    },
+    {
+     "name": "Stein",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Ebnat-Kappel",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 139,
+   "parishes": [
+    {
+     "name": "Ebnat-Kappel",
+     "kath": 19,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Wattwil",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 129,
+   "parishes": [
+    {
+     "name": "Wattwil",
+     "kath": 26,
+     "evang": 28
+    },
+    {
+     "name": "Ricken",
+     "kath": 24,
+     "evang": 28
+    },
+    {
+     "name": "Krinau",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Lichtensteig",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 129,
+   "parishes": [
+    {
+     "name": "Lichtensteig",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Neckertal",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 120,
+   "parishes": [
+    {
+     "name": "St. Peterzell",
+     "kath": 22,
+     "evang": 28
+    },
+    {
+     "name": "Brunnadern",
+     "kath": 24,
+     "evang": 28
+    },
+    {
+     "name": "Mogelsberg-Necker",
+     "kath": 24,
+     "evang": 28
+    },
+    {
+     "name": "Oberhelfenschwil",
+     "kath": 24,
+     "evang": 28
+    },
+    {
+     "name": "Hemberg",
+     "kath": 26,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Bütschwil-Ganterschwil",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 119,
+   "parishes": [
+    {
+     "name": "Bütschwil-Ganterschwil",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Lütisburg",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 145,
+   "parishes": [
+    {
+     "name": "Lütisburg",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Mosnang",
+   "grundsteuerPromille": 0.5,
+   "steuerfuss": 129,
+   "parishes": [
+    {
+     "name": "Mosnang",
+     "kath": 24,
+     "evang": 28
+    },
+    {
+     "name": "Libingen",
+     "kath": 24,
+     "evang": 28
+    },
+    {
+     "name": "Mühlrüti",
+     "kath": 26,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Kirchberg",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 120,
+   "parishes": [
+    {
+     "name": "Kirchberg",
+     "kath": 23,
+     "evang": 26
+    }
+   ]
+  },
+  {
+   "name": "Jonschwil",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 122,
+   "parishes": [
+    {
+     "name": "Jonschwil",
+     "kath": 24,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Oberuzwil",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 117,
+   "parishes": [
+    {
+     "name": "Oberuzwil",
+     "kath": 24,
+     "evang": 25
+    },
+    {
+     "name": "Niederglatt",
+     "kath": 25,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Uzwil",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 122,
+   "parishes": [
+    {
+     "name": "Uzwil",
+     "kath": 23,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Flawil",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 124,
+   "parishes": [
+    {
+     "name": "Flawil",
+     "kath": 25,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Degersheim",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 141,
+   "parishes": [
+    {
+     "name": "Degersheim",
+     "kath": 25,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Wil",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 115,
+   "parishes": [
+    {
+     "name": "Wil",
+     "kath": 22,
+     "evang": 23
+    }
+   ]
+  },
+  {
+   "name": "Zuzwil",
+   "grundsteuerPromille": 0.4,
+   "steuerfuss": 77,
+   "parishes": [
+    {
+     "name": "Zuzwil",
+     "kath": 21,
+     "evang": 23
+    }
+   ]
+  },
+  {
+   "name": "Oberbüren",
+   "grundsteuerPromille": 0.3,
+   "steuerfuss": 100,
+   "parishes": [
+    {
+     "name": "Oberbüren",
+     "kath": 27,
+     "evang": 25
+    },
+    {
+     "name": "Niederwil",
+     "kath": 25,
+     "evang": 28
+    },
+    {
+     "name": "Sonnental",
+     "kath": 23,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Niederbüren",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 116,
+   "parishes": [
+    {
+     "name": "Niederbüren",
+     "kath": 24,
+     "evang": 28
+    }
+   ]
+  },
+  {
+   "name": "Niederhelfenschwil",
+   "grundsteuerPromille": 0.4,
+   "steuerfuss": 104,
+   "parishes": [
+    {
+     "name": "Niederhelfenschwil",
+     "kath": 24,
+     "evang": 24
+    },
+    {
+     "name": "Lenggenwil",
+     "kath": 24,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Gossau",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 116,
+   "parishes": [
+    {
+     "name": "Gossau",
+     "kath": 20,
+     "evang": 23
+    },
+    {
+     "name": "Arnegg (Andwil)",
+     "kath": 19,
+     "evang": 23
+    }
+   ]
+  },
+  {
+   "name": "Andwil",
+   "grundsteuerPromille": 0.6,
+   "steuerfuss": 113,
+   "parishes": [
+    {
+     "name": "Andwil",
+     "kath": 19,
+     "evang": 23
+    }
+   ]
+  },
+  {
+   "name": "Waldkirch",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 122,
+   "parishes": [
+    {
+     "name": "Waldkirch",
+     "kath": 26,
+     "evang": 28
+    },
+    {
+     "name": "Bernhardzell",
+     "kath": 24,
+     "evang": 25
+    }
+   ]
+  },
+  {
+   "name": "Gaiserwald",
+   "grundsteuerPromille": 0.8,
+   "steuerfuss": 103,
+   "parishes": [
+    {
+     "name": "Engelburg",
+     "kath": 23,
+     "evang": 21
+    },
+    {
+     "name": "Abtwil",
+     "kath": 21,
+     "evang": 21
+    }
+   ]
+  }
+ ]
+}
