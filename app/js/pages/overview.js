@@ -133,7 +133,7 @@ export function renderOverview(el) {
       <div class="card-head">${icon('calendar')}<h3>Termine</h3></div>
       <div class="dates">${dates.map(([d, txt]) => `<div><b>${d}</b><span>${txt}</span></div>`).join('')}</div>
     </section>
-    <p class="note">${icon('pin')}<span>Steuerhilfe rechnet für den Kanton St.Gallen${LI_ENABLED ? ' und für Liechtenstein (Wahl oben)' : ''}. Weitere Kantone folgen – eine Version für Ihren Kanton erstellen wir gerne auf Anfrage.</span>
+    <p class="note">${icon('pin')}<span>Steuerhilfe rechnet für den Kanton St.Gallen${LI_ENABLED ? ' und für Liechtenstein (Wahl oben)' : '. Eine Version für Liechtenstein ist in Vorbereitung'}. Weitere Kantone folgen – eine Version für Ihren Kanton erstellen wir gerne auf Anfrage.</span>
       <a href="mailto:info@lweb.ch?subject=Steuerhilfe%20f%C3%BCr%20meinen%20Kanton">Anfragen</a></p>`;
 
   el.querySelector('[data-demo]')?.addEventListener('click', () => store.loadDemo());
