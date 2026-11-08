@@ -176,6 +176,24 @@ class Cloud extends EventTarget {
     this.dispatchEvent(new Event('signedout'));
   }
 
+  /** Konto mit allen Cloud-Daten und Belegen endgültig löschen (cuenta-borrar.php), danach wie Abmelden. */
+  async deleteAccount() {
+    this._closing = true;
+    clearTimeout(this._timer);
+    for (let i = 0; this.isSyncing && i < 300; i++) await new Promise((r) => setTimeout(r, 100));
+    try {
+      await call('cuenta-borrar.php', { method: 'POST', json: { confirmar: this.email }, token: this.token });
+    } catch (e) { this._closing = false; throw e; }
+    this.token = null; this.email = null; this.account = null; this.key = null; this.needsKey = false; this.lastError = null;
+    remove(SESSION); remove(STATE); remove(BACKUP);
+    this.st = {};
+    store.serverLicense = null;
+    await store.wipeLocal();
+    this._closing = false;
+    this.emit();
+    this.dispatchEvent(new Event('signedout'));
+  }
+
   /** Beim Start: Sitzung prüfen, Schlüssel holen, abgleichen. Offline geht es lokal weiter. */
   async resume() {
     if (!this.token) return;

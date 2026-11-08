@@ -190,6 +190,31 @@ export function confirmDialog(title, message, confirmLabel = 'Löschen', destruc
   });
 }
 
+/** Wie confirmDialog, aber der Knopf geht erst, wenn «expected» eingetippt ist (Konto löschen). */
+export function typeConfirmDialog(title, message, expected, confirmLabel) {
+  return new Promise((resolve) => {
+    const m = document.createElement('div');
+    m.className = 'modal';
+    m.innerHTML = `<div class="modal-box sm" role="alertdialog" aria-modal="true" aria-labelledby="tc-t">
+      <div class="cd-head">${icon('warn')}<h2 id="tc-t">${esc(title)}</h2></div>
+      <p>${esc(message)}</p>
+      <label class="tc-label">Zur Bestätigung Ihre E-Mail eingeben:<input type="email" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(expected)}" data-in></label>
+      <div class="mfoot"><button type="button" class="btn btn-ghost" data-no>Abbrechen</button>
+      <button type="button" class="btn btn-danger" data-yes disabled>${esc(confirmLabel)}</button></div></div>`;
+    const input = m.querySelector('[data-in]'), yes = m.querySelector('[data-yes]');
+    const ok = () => input.value.trim().toLowerCase() === String(expected).toLowerCase();
+    const done = (v) => { m.remove(); document.removeEventListener('keydown', key); resolve(v); };
+    const key = (e) => { if (e.key === 'Escape') done(false); if (e.key === 'Enter' && ok()) done(true); };
+    input.addEventListener('input', () => { yes.disabled = !ok(); });
+    m.querySelector('[data-no]').onclick = () => done(false);
+    yes.onclick = () => { if (ok()) done(true); };
+    m.addEventListener('click', (e) => { if (e.target === m) done(false); });
+    document.addEventListener('keydown', key);
+    document.body.appendChild(m);
+    input.focus();
+  });
+}
+
 /**
  * Bearbeitungsfenster mit Entwurf (wie die Sheets der Mac-App: «Abbrechen» / «Übernehmen»).
  * render(draft) liefert das Innere; onSave(draft) beim Übernehmen.

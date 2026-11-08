@@ -2,7 +2,7 @@
 import { store } from '../store.js';
 import { cloud } from '../cloud.js';
 import { icon } from '../icons.js';
-import { header, confirmDialog, esc } from '../forms.js';
+import { header, confirmDialog, typeConfirmDialog, esc } from '../forms.js';
 import { toast } from './transfer.js';
 
 const dateCH = (d) => new Date(String(d).replace(' ', 'T')).toLocaleDateString('de-CH', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -42,7 +42,13 @@ export default {
       <ul class="devices">${a.aparatos.map((d) => `<li><span>${esc(d.aparato || 'Gerät')}${d.este ? ' <small>· dieses Gerät</small>' : ''}</span><small>seit ${dateCH(d.desde)}</small></li>`).join('')}</ul>
       ${a.aparatos.length > 1 ? `<div class="btns"><button type="button" class="btn btn-ghost danger" data-act="logoutAll">${icon('lock')}Auf allen Geräten abmelden</button></div>` : ''}`) : '';
 
-    const lizenz = card('Lizenz', 'review', l
+    const viaKonto = (!l || store.licenseExpired) && store.hasAccountLicense;
+    const bis = store.accountLicenseUntil;
+    const lizenz = card('Lizenz', 'review', viaKonto
+      ? `<div class="kv"><span>Vollversion</span><b>über Ihr Konto</b></div>
+         <div class="kv"><span>Gültig bis</span><b>${bis && bis.getFullYear() < 9999 ? bis.toLocaleDateString('de-CH', { day: 'numeric', month: 'long', year: 'numeric' }) : 'unbefristet'}</b></div>
+         <p class="muted">Zum Beispiel ein Abo aus der App für iPhone und iPad – es gilt mit demselben Konto auch hier.</p>`
+      : l
       ? `<div class="kv"><span>Lizenz</span><b>${esc(l.info.name || 'Vollversion')}</b></div>
          <div class="kv"><span>Gültigkeit</span><b>${validity}</b></div>
          <div class="kv"><span>Steuerjahre</span><b>${l.info.years.includes(0) ? 'alle Steuerjahre' : l.info.years.join(', ')}</b></div>
@@ -54,8 +60,17 @@ export default {
       <p class="muted">Beim Anmelden wurden die Angaben aus Ihrem Konto übernommen. Was vorher in diesem Browser stand, ist hier noch als Kopie da.</p>
       <div class="btns"><button type="button" class="btn btn-ghost" ${store.isUnlocked() ? 'data-act="saveBackup"' : 'data-paywall="export"'}>${icon(store.isUnlocked() ? 'download' : 'lock')}Kopie als Datei speichern</button></div>`) : '';
 
-    return header('Mein Konto', 'Ihr Konto gilt im Browser und in der Mac-App: dieselbe E-Mail, dieselben Angaben.', 'account')
-      + konto + lizenz + geraete + backup;
+    const recht = card('Rechtliches & Hilfe', 'doc', `
+      <ul class="legal">
+        <li><a href="/datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a></li>
+        <li><a href="mailto:info@lweb.ch?subject=Steuerhilfe%20SG">Hilfe &amp; Kontakt</a></li>
+        <li><a href="/" target="_blank" rel="noopener">steuerhilfe.sg</a></li>
+      </ul>
+      <p class="muted small">Lweb · Sevelen SG</p>`);
+
+    return header('Mein Konto', 'Ihr Konto gilt im Browser, in der Mac-App und auf iPhone und iPad: dieselbe E-Mail, dieselben Angaben.', 'account')
+      + konto + lizenz + geraete + backup + recht
+      + '<p class="del-account"><button type="button" class="linklike danger" data-act="deleteAccount">Konto löschen …</button></p>';
   },
   actions: {
     sync() { cloud.sync(); return false; },
@@ -71,6 +86,15 @@ export default {
     async logoutAll() {
       if (!(await confirmDialog('Auf allen Geräten abmelden?', 'Alle Browser und Macs mit diesem Konto müssen sich danach neu anmelden – zum Beispiel, wenn Sie ein Gerät verloren haben.', 'Überall abmelden'))) return false;
       await cloud.signOut({ everywhere: true });
+      return false;
+    },
+    async deleteAccount() {
+      const ok = await typeConfirmDialog('Konto endgültig löschen?',
+        'Gelöscht werden Ihr Cloud-Konto, alle darin gesicherten Steuerdaten und Belege sowie die Verbindung zu Ihrer Lizenz. Auch die Angaben in diesem Browser werden entfernt – speichern Sie vorher unter «Bericht & Export» eine Datensicherung, wenn Sie sie behalten möchten. Ein App-Store-Abo kündigen Sie separat in den Einstellungen Ihres Apple-Accounts.',
+        cloud.email || '', 'Konto löschen');
+      if (!ok) return false;
+      try { await cloud.deleteAccount(); toast('Konto gelöscht'); }
+      catch { toast('Das Konto konnte nicht gelöscht werden. Bitte prüfen Sie die Internetverbindung.'); }
       return false;
     },
     saveBackup() {

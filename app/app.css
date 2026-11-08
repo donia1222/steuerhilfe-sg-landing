@@ -532,3 +532,18 @@ label.btn { cursor: pointer; }
 .devices li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
 .devices li:last-child { border-bottom: 0; }
 .devices small { color: var(--muted); }
+
+/* Mein Konto: Konto löschen, Rechtliches (08.11.2026) */
+.del-account { margin: 14px 0 0; text-align: center; }
+.linklike { background: none; border: 0; padding: 4px 6px; font: inherit; font-size: 13.5px; color: var(--brand); cursor: pointer; }
+.linklike.danger { color: var(--red); }
+.linklike:hover { text-decoration: underline; }
+.legal { list-style: none; margin: 4px 0 0; padding: 0; }
+.legal li { border-top: 1px solid var(--line, rgba(127,127,127,.18)); }
+.legal li:first-child { border-top: 0; }
+.legal a { display: block; padding: 11px 0; text-decoration: none; }
+.legal a:hover { text-decoration: underline; }
+.muted.small { font-size: 12.5px; margin-top: 8px; }
+.tc-label { display: block; margin: 14px 0 4px; font-size: 13.5px; }
+.tc-label input { display: block; width: 100%; margin-top: 6px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line, rgba(127,127,127,.3)); font: inherit; background: var(--surface, #fff); color: inherit; }
+.btn-danger:disabled { opacity: .45; cursor: not-allowed; }

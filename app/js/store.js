@@ -67,7 +67,17 @@ class Store extends EventTarget {
     return local;
   }
   get licenseExpired() { const e = this.licenseExpiresAt; return !!e && e < new Date(); }
-  isUnlocked(year = this.year) { return !!this.license && !this.licenseExpired && covers(this.license.info, year); }
+  /** Gültige Lizenz im Konto – auch ohne Schlüssel in diesem Browser, z. B. ein App-Store-Abo vom iPhone (08.11.2026). */
+  get accountLicenseUntil() {
+    const sv = this.serverLicense;
+    if (!sv?.valida) return null;
+    return sv.caduca ? new Date(String(sv.caduca).replace(' ', 'T')) : new Date(8.64e15);
+  }
+  get hasAccountLicense() { const u = this.accountLicenseUntil; return !!u && u > new Date(); }
+  isUnlocked(year = this.year) {
+    if ((!this.license || this.licenseExpired) && this.hasAccountLicense) return true;
+    return !!this.license && !this.licenseExpired && covers(this.license.info, year);
+  }
   get licenseDaysLeft() { const e = this.licenseExpiresAt; return e ? Math.ceil((e - new Date()) / 86400000) : null; }
   get expiryNotice() {
     const e = this.licenseExpiresAt;
