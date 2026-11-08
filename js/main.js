@@ -82,4 +82,15 @@
   addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lb.hidden) close(); });
 
   $('#year').textContent = new Date().getFullYear();
+
+  // Schon im Browser angemeldet (gleiche Domain wie /app): statt «Jetzt starten» direkt zur App (08.11.2026)
+  try {
+    const sitzung = JSON.parse(localStorage.getItem('steuerhilfe-web-sitzung') || 'null');
+    if (sitzung && sitzung.token) {
+      document.querySelectorAll('a[data-signed]').forEach((a) => {
+        const t = [...a.childNodes].find((n) => n.nodeType === 3 && n.textContent.trim());
+        if (t) t.textContent = t.textContent.replace(t.textContent.trim(), a.dataset.signed);
+      });
+    }
+  } catch { /* privat oder gesperrt: Texte bleiben */ }
 })();
