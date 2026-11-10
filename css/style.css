@@ -515,3 +515,6 @@ details p { padding-bottom: 20px; color: var(--ink-2); }
 .hero__ios { margin-top: 6px; }
 .hero__ios a { color: var(--brand-dark, #1f4d43); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .hero__ios a .ic { color: currentColor; width: 16px; height: 16px; vertical-align: -2px; margin-right: 6px; }
+/* Cada aparato ve primero lo suyo (10/11/2026). Un elemento con «solo» solo se ve en los aparatos que nombra
+   (solo-ios / solo-mac / solo-web). Sin JavaScript no hay clase en <html> y se ve todo. */
+html.dev-ios .solo:not(.solo-ios), html.dev-mac .solo:not(.solo-mac), html.dev-web .solo:not(.solo-web) { display: none !important; }

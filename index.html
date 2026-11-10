@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>/* Cada aparato ve primero lo suyo (10/11/2026): iPhone/iPad → App Store, Mac → descarga para Mac,
+   Android/Windows/Linux → la versión web. El iPad se presenta como Mac: se le reconoce por la pantalla táctil.
+   Sin JavaScript no se marca nada y se ve todo. */
+try{var u=navigator.userAgent,d=document.documentElement,ios=/iPhone|iPad|iPod/.test(u)||(/Macintosh/.test(u)&&navigator.maxTouchPoints>1);
+d.classList.add(ios?'dev-ios':(/Macintosh|Mac OS X/.test(u)?'dev-mac':'dev-web'));}catch(e){}</script>
 <title>Steuererklärung St.Gallen einfach ausfüllen – im Browser und auf dem Mac · Steuerhilfe SG</title>
 <meta name="description" content="Steuerhilfe SG: die Steuererklärung für den Kanton St.Gallen – direkt im Browser auf jedem Gerät oder als Mac-App. Alle Abzüge finden, Steuern für Kanton, Gemeinde und Bund genau berechnen und in E-Tax SG übertragen. Testversion kostenlos.">
 <meta name="keywords" content="Steuererklärung St.Gallen, Steuererklärung Kanton St.Gallen, E-Tax SG, Steuern St.Gallen, Steuererklärung Mac, Steuerrechner St.Gallen, Steuererklärung ausfüllen, Abzüge Steuererklärung, Säule 3a, Steuersoftware Schweiz, Steuerhilfe">
@@ -258,12 +263,16 @@
       <a href="#verfuegbarkeit">Verfügbarkeit</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn--primary btn--sm hdr__cta" href="app/" data-signed="Zur App">Jetzt starten <svg class="ic"><use href="#i-arrow"/></svg></a>
+    <a class="btn btn--primary btn--sm hdr__cta solo solo-mac solo-web" href="app/" data-signed="Zur App">Jetzt starten <svg class="ic"><use href="#i-arrow"/></svg></a>
+    <a class="btn btn--primary btn--sm hdr__cta solo solo-ios" href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>App laden</a>
     <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
   </div>
   <div class="mnav" id="mnav" hidden>
     <a href="#funktionen">Funktionen</a><a href="#ablauf">So geht’s</a><a href="#datenschutz">Datenschutz</a><a href="#verfuegbarkeit">Verfügbarkeit</a><a href="#faq">FAQ</a>
-    <a class="btn btn--primary" href="app/" data-signed="Zur App">Jetzt starten</a>
+    <a class="btn btn--primary solo solo-ios" href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Im App Store laden</a>
+    <a class="btn btn--primary solo solo-mac" href="#download"><svg class="ic"><use href="#i-mac"/></svg>Für Mac laden</a>
+    <a class="btn btn--primary solo solo-web" href="app/" data-signed="Zur App">Jetzt starten</a>
+    <a class="btn btn--ghost solo solo-ios solo-mac" href="app/" data-signed="Zur App"><svg class="ic"><use href="#i-globe"/></svg>Im Browser starten</a>
   </div>
 </header>
 
@@ -276,11 +285,13 @@
     <h1 class="reveal">Die St.Galler Steuererklärung.<br><span class="grad">Endlich einfach.</span></h1>
     <p class="lead reveal">Für Familien und Private im Kanton St.Gallen: alle Abzüge finden, Steuern auf den Franken genau berechnen – und Feld für Feld in E-Tax SG übertragen. Direkt im Browser auf jedem Gerät, ohne Installation. Oder als App für Mac, iPhone und iPad.</p>
     <div class="hero__ctas reveal">
-      <a class="btn btn--primary btn--lg" href="app/" data-signed="Weiter zu meiner Steuererklärung">Jetzt kostenlos starten <svg class="ic"><use href="#i-arrow"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="#download"><svg class="ic"><use href="#i-mac"/></svg>Desktop-Version für Mac laden</a>
+      <a class="btn btn--primary btn--lg solo solo-ios" href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Im App Store laden</a>
+      <a class="btn btn--primary btn--lg solo solo-mac" href="#download"><svg class="ic"><use href="#i-mac"/></svg>Für Mac laden</a>
+      <a class="btn btn--primary btn--lg solo solo-web" href="app/" data-signed="Weiter zu meiner Steuererklärung">Jetzt kostenlos starten <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost btn--lg solo solo-ios solo-mac" href="app/" data-signed="Weiter im Browser"><svg class="ic"><use href="#i-globe"/></svg>Im Browser starten</a>
     </div>
     <p class="hero__devs reveal"><svg class="ic"><use href="#i-globe"/></svg>Im Browser auf Mac, Windows, Linux, iPhone, iPad und Android</p>
-    <p class="hero__devs hero__ios reveal"><a href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Neu: Steuerhilfe SG als App für iPhone und iPad</a></p>
+    <p class="hero__devs hero__ios reveal solo solo-mac"><a href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Neu: Steuerhilfe SG als App für iPhone und iPad</a></p>
     <ul class="hero__facts reveal">
       <li><svg class="ic"><use href="#i-check"/></svg>Testversion kostenlos</li>
       <li><svg class="ic"><use href="#i-lock"/></svg>Verschlüsselt gesichert in der Schweiz</li>
@@ -635,14 +646,16 @@
       <h2 class="reveal">Im Browser, auf dem Mac oder auf iPhone und iPad</h2>
       <p class="reveal">Testversion kostenlos: alles erfassen, Belege lesen lassen und die Steuern berechnen. Die Vollversion mit Übertragung in E-Tax SG, PDF-Bericht, allen Spartipps und verschlüsselter Cloud-Sicherung kostet <b style="color:#fff">CHF 99 pro Jahr und Haushalt</b> – der Lizenzschlüssel kommt per E-Mail und gilt 12 Monate ab der Aktivierung.</p>
       <div class="dl__ctas dl__ctas--two reveal">
-        <a class="btn btn--light btn--lg" href="app/" data-signed="Im Browser öffnen"><svg class="ic"><use href="#i-globe"/></svg>Im Browser starten</a>
-        <a class="btn btn--outline btn--lg" href="download/Steuerhilfe-SG-Testversion.dmg" download><svg class="ic"><use href="#i-down"/></svg>Für Mac laden (DMG, 5 MB)</a>
-        <a class="btn btn--outline btn--lg" href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Für iPhone &amp; iPad im App Store</a>
+        <a class="btn btn--light btn--lg solo solo-ios" href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Im App Store laden</a>
+        <a class="btn btn--light btn--lg solo solo-mac" href="download/Steuerhilfe-SG-Testversion.dmg" download><svg class="ic"><use href="#i-down"/></svg>Für Mac laden (DMG, 5 MB)</a>
+        <a class="btn btn--light btn--lg solo solo-web" href="app/" data-signed="Im Browser öffnen"><svg class="ic"><use href="#i-globe"/></svg>Im Browser starten</a>
+        <a class="btn btn--outline btn--lg solo solo-ios solo-mac" href="app/" data-signed="Im Browser öffnen"><svg class="ic"><use href="#i-globe"/></svg>Im Browser starten</a>
+        <a class="btn btn--outline btn--lg solo solo-mac" href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Für iPhone &amp; iPad im App Store</a>
       </div>
       <p class="reveal dl__alt">Im Browser auf Mac, Windows, Linux, iPhone, iPad und Android – ohne Installation, Anmeldung mit E-Mail und Code. Dieselbe Lizenz und dieselben Angaben wie in der Mac-App. Auf iPhone und iPad gibt es Steuerhilfe SG auch als App: Die Vollversion lässt sich dort direkt als Abo im App Store kaufen und gilt über Ihr Konto auch im Browser und auf dem Mac.</p>
       <p class="reveal dl__soon"><svg class="ic ic--flag"><use href="#i-li"/></svg>Bald auch für Liechtenstein – wir arbeiten daran.</p>
-      <p class="reveal dl__stepshead">Mac-App installieren:</p>
-      <ol class="dl__steps reveal">
+      <p class="reveal dl__stepshead solo solo-mac">Mac-App installieren:</p>
+      <ol class="dl__steps reveal solo solo-mac">
         <li>DMG öffnen und Steuerhilfe SG in den Ordner «Programme» ziehen.</li>
         <li>Steuerhilfe SG starten. Falls macOS beim ersten Start nachfragt: Rechtsklick auf Steuerhilfe SG → «Öffnen».</li>
         <li>Steuerjahr wählen, Belege hineinziehen – fertig.</li>
