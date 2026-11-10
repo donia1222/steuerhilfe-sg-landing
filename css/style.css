@@ -518,3 +518,13 @@ details p { padding-bottom: 20px; color: var(--ink-2); }
 /* Cada aparato ve primero lo suyo (10/11/2026). Un elemento con «solo» solo se ve en los aparatos que nombra
    (solo-ios / solo-mac / solo-web). Sin JavaScript no hay clase en <html> y se ve todo. */
 html.dev-ios .solo:not(.solo-ios), html.dev-mac .solo:not(.solo-mac), html.dev-web .solo:not(.solo-web) { display: none !important; }
+/* El distintivo oficial del App Store en lugar de un botón con texto (10/11/2026) */
+.as-badge { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; border-radius: 12px; transition: transform .15s, opacity .15s; }
+.as-badge:hover { transform: translateY(-1px); opacity: .92; }
+.as-badge img { display: block; height: 100%; width: auto; }
+.as-badge--lg { height: 54px; }
+.as-badge--sm { height: 38px; }
+.as-badge--menu { height: 52px; margin-top: 12px; justify-self: start; }
+@media (max-width: 600px) { .dl__ctas--two .as-badge--lg, .hero__ctas .as-badge--lg { height: 56px; align-self: center; } }
+.mnav a.as-badge { padding: 0; border-bottom: 0; }
+@media (max-width: 1000px) { .hdr__cta.as-badge { display: none !important; } }
