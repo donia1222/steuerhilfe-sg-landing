@@ -511,3 +511,7 @@ details p { padding-bottom: 20px; color: var(--ink-2); }
 .dl .dl__soon { display: flex; align-items: center; gap: 8px; margin: 10px 0 0; font-size: 14px; color: rgba(255, 255, 255, .6); }
 .dl .dl__stepshead { margin: 26px 0 8px; font-size: 14.5px; font-weight: 600; color: rgba(255, 255, 255, .85); }
 @media (max-width: 600px) { .dl__ctas--two .btn { width: 100%; } }
+/* La app de iPhone/iPad, en su propia línea bajo «Im Browser auf …» (10/11/2026) */
+.hero__ios { margin-top: 6px; }
+.hero__ios a { color: var(--brand-dark, #1f4d43); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.hero__ios a .ic { color: currentColor; width: 16px; height: 16px; vertical-align: -2px; margin-right: 6px; }

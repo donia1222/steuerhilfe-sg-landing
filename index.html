@@ -173,7 +173,15 @@
     "name": "Funktioniert Steuerhilfe SG auch auf Windows, iPhone oder Android?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Ja. Steuerhilfe SG läuft direkt im Browser – auf Mac, Windows, Linux, iPhone, iPad und Android, ohne Installation. Mit Ihrem Konto haben Sie im Browser und in der Mac-App dieselben Angaben."
+     "text": "Ja. Steuerhilfe SG läuft direkt im Browser – auf Mac, Windows, Linux, iPhone, iPad und Android, ohne Installation. Für iPhone und iPad gibt es zusätzlich die App im App Store. Mit Ihrem Konto haben Sie überall dieselben Angaben."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Gibt es eine App für iPhone und iPad?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Ja, Steuerhilfe SG gibt es im App Store. Die App ist kostenlos zum Ausprobieren; die Vollversion kaufen Sie direkt in der App als Jahres-Abo über den App Store. Mit Ihrem Konto gilt das Abo auch im Browser und in der Mac-App."
     }
    },
    {
@@ -199,7 +207,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20261107">
+<link rel="stylesheet" href="css/style.css?v=20261110">
 <!-- Vercel Web Analytics (ohne Cookies) -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>
@@ -232,6 +240,7 @@
     <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8v6M8 11h6"/></symbol>
     <symbol id="i-cloudoff" viewBox="0 0 24 24"><path d="M3 3l18 18M8 7.5A5.5 5.5 0 0 1 17.6 10 4 4 0 0 1 20 17M17 19H7a4.5 4.5 0 0 1-1.6-8.7"/></symbol>
     <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10.5a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.3 10.2 4 4 0 0 0 7 18z"/><path d="M10 13.5h4v3h-4zM11 13.5V12a1 1 0 0 1 2 0v1.5"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.52zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.56-1.23z"/></symbol>
     <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol><symbol id="i-li" viewBox="0 0 32 32"><path d="M7 0h18a7 7 0 0 1 7 7v9H0V7a7 7 0 0 1 7-7z" fill="#002B7F" stroke="none"/><path d="M0 16h32v9a7 7 0 0 1-7 7H7a7 7 0 0 1-7-7z" fill="#CE1126" stroke="none"/><path d="M7 11.5 8 7l2.2 2.4L12 6.5l1.8 2.9L16 7l1 4.5z" fill="#E5B82E" stroke="none"/><rect x="7" y="11.5" width="10" height="1.6" fill="#E5B82E" stroke="none"/></symbol><symbol id="i-swiss" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#d52b1e" stroke="none"/><path d="M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z" fill="#fff" stroke="none"/></symbol>
   </defs>
 </svg>
@@ -265,12 +274,13 @@
   <div class="wrap hero__top">
     <span class="pill reveal"><svg class="ic ic--flag"><use href="#i-swiss"/></svg>Für den Kanton St.Gallen · Steuerjahr 2025 und 2026</span>
     <h1 class="reveal">Die St.Galler Steuererklärung.<br><span class="grad">Endlich einfach.</span></h1>
-    <p class="lead reveal">Für Familien und Private im Kanton St.Gallen: alle Abzüge finden, Steuern auf den Franken genau berechnen – und Feld für Feld in E-Tax SG übertragen. Direkt im Browser auf jedem Gerät, ohne Installation. Oder als App für den Mac.</p>
+    <p class="lead reveal">Für Familien und Private im Kanton St.Gallen: alle Abzüge finden, Steuern auf den Franken genau berechnen – und Feld für Feld in E-Tax SG übertragen. Direkt im Browser auf jedem Gerät, ohne Installation. Oder als App für Mac, iPhone und iPad.</p>
     <div class="hero__ctas reveal">
       <a class="btn btn--primary btn--lg" href="app/" data-signed="Weiter zu meiner Steuererklärung">Jetzt kostenlos starten <svg class="ic"><use href="#i-arrow"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="#download"><svg class="ic"><use href="#i-mac"/></svg>Desktop-Version für Mac laden</a>
     </div>
     <p class="hero__devs reveal"><svg class="ic"><use href="#i-globe"/></svg>Im Browser auf Mac, Windows, Linux, iPhone, iPad und Android</p>
+    <p class="hero__devs hero__ios reveal"><a href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Neu: Steuerhilfe SG als App für iPhone und iPad</a></p>
     <ul class="hero__facts reveal">
       <li><svg class="ic"><use href="#i-check"/></svg>Testversion kostenlos</li>
       <li><svg class="ic"><use href="#i-lock"/></svg>Verschlüsselt gesichert in der Schweiz</li>
@@ -622,13 +632,14 @@
     <img class="dl__icon reveal" src="img/icon-512.png" alt="Steuerhilfe SG App-Symbol" width="168" height="168" loading="lazy">
     <div class="dl__copy">
       <span class="eyebrow reveal">Loslegen</span>
-      <h2 class="reveal">Im Browser oder auf dem Mac</h2>
+      <h2 class="reveal">Im Browser, auf dem Mac oder auf iPhone und iPad</h2>
       <p class="reveal">Testversion kostenlos: alles erfassen, Belege lesen lassen und die Steuern berechnen. Die Vollversion mit Übertragung in E-Tax SG, PDF-Bericht, allen Spartipps und verschlüsselter Cloud-Sicherung kostet <b style="color:#fff">CHF 99 pro Jahr und Haushalt</b> – der Lizenzschlüssel kommt per E-Mail und gilt 12 Monate ab der Aktivierung.</p>
       <div class="dl__ctas dl__ctas--two reveal">
         <a class="btn btn--light btn--lg" href="app/" data-signed="Im Browser öffnen"><svg class="ic"><use href="#i-globe"/></svg>Im Browser starten</a>
         <a class="btn btn--outline btn--lg" href="download/Steuerhilfe-SG-Testversion.dmg" download><svg class="ic"><use href="#i-down"/></svg>Für Mac laden (DMG, 5 MB)</a>
+        <a class="btn btn--outline btn--lg" href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener"><svg class="ic"><use href="#i-apple"/></svg>Für iPhone &amp; iPad im App Store</a>
       </div>
-      <p class="reveal dl__alt">Im Browser auf Mac, Windows, Linux, iPhone, iPad und Android – ohne Installation, Anmeldung mit E-Mail und Code. Dieselbe Lizenz und dieselben Angaben wie in der Mac-App.</p>
+      <p class="reveal dl__alt">Im Browser auf Mac, Windows, Linux, iPhone, iPad und Android – ohne Installation, Anmeldung mit E-Mail und Code. Dieselbe Lizenz und dieselben Angaben wie in der Mac-App. Auf iPhone und iPad gibt es Steuerhilfe SG auch als App: Die Vollversion lässt sich dort direkt als Abo im App Store kaufen und gilt über Ihr Konto auch im Browser und auf dem Mac.</p>
       <p class="reveal dl__soon"><svg class="ic ic--flag"><use href="#i-li"/></svg>Bald auch für Liechtenstein – wir arbeiten daran.</p>
       <p class="reveal dl__stepshead">Mac-App installieren:</p>
       <ol class="dl__steps reveal">
@@ -662,7 +673,8 @@
       <details class="reveal"><summary>Gibt es Steuerhilfe auch für Liechtenstein?</summary><p>Noch nicht – wir arbeiten daran. Die Version für Einwohnerinnen und Einwohner des Fürstentums Liechtenstein (Landes- und Gemeindesteuer, eTax FL) erscheint, sobald die Berechnung vollständig geprüft ist. Wer in St.Gallen wohnt und in Liechtenstein arbeitet, kann Steuerhilfe SG schon heute verwenden.</p></details>
       <details class="reveal"><summary>Ich wohne nicht im Kanton St.Gallen – gibt es eine Version für mich?</summary><p>Steuerhilfe SG gibt es derzeit für den Kanton St.Gallen, weil jeder Kanton eigene Formulare, Tarife und Abzüge hat. Weitere Kantone folgen. Schreiben Sie uns an <a href="mailto:info@lweb.ch?subject=Steuerhilfe%20f%C3%BCr%20meinen%20Kanton">info@lweb.ch</a> – wir erstellen auf Anfrage gerne eine Version für Ihren Kanton.</p></details>
       <details class="reveal"><summary>Für wen eignet sich Steuerhilfe SG?</summary><p>Für Private und Familien im Kanton St.Gallen: Angestellte, Rentnerinnen und Rentner, Familien mit Kindern, Wohneigentum, Konten und Wertschriften. Für Selbständigerwerbende und Landwirte deckt Steuerhilfe SG erst die Grundlagen ab.</p></details>
-      <details class="reveal"><summary>Funktioniert Steuerhilfe SG auch auf Windows, iPhone oder Android?</summary><p>Ja. Steuerhilfe SG läuft direkt im Browser – auf Mac, Windows, Linux, iPhone, iPad und Android, ohne Installation: <a href="app/">Jetzt starten</a>. Mit Ihrem Konto haben Sie im Browser und in der Mac-App dieselben Angaben.</p></details>
+      <details class="reveal"><summary>Funktioniert Steuerhilfe SG auch auf Windows, iPhone oder Android?</summary><p>Ja. Steuerhilfe SG läuft direkt im Browser – auf Mac, Windows, Linux, iPhone, iPad und Android, ohne Installation: <a href="app/">Jetzt starten</a>. Für iPhone und iPad gibt es zusätzlich die <a href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener">App im App Store</a>. Mit Ihrem Konto haben Sie überall dieselben Angaben.</p></details>
+      <details class="reveal"><summary>Gibt es eine App für iPhone und iPad?</summary><p>Ja: <a href="https://apps.apple.com/ch/app/steuerhilfe-sg/id6831987852" target="_blank" rel="noopener">Steuerhilfe SG im App Store</a>. Die App ist kostenlos zum Ausprobieren. Die Vollversion kaufen Sie direkt in der App als Jahres-Abo über den App Store – verwalten und kündigen können Sie es jederzeit in den Einstellungen Ihres iPhones. Melden Sie sich in der App mit Ihrem Konto an, gilt das Abo auch im Browser und in der Mac-App.</p></details>
       <details class="reveal"><summary>Was kostet Steuerhilfe SG?</summary><p>Die Testversion ist kostenlos: Sie können alles erfassen und sehen Ihren Steuerbetrag. Die Vollversion kostet CHF 99 pro Jahr und Haushalt (12 Monate ab der Aktivierung) und schaltet die Übertragung in E-Tax SG, den PDF-Bericht, alle Spartipps im Detail, den Datenexport und die verschlüsselte Cloud-Sicherung frei. Ihre Eingaben bleiben beim Freischalten erhalten.</p></details>
       <details class="reveal"><summary>Wie erhalte ich die Vollversion?</summary><p>In Steuerhilfe SG auf «Testversion» klicken und «Lizenz bei Lweb anfragen» wählen – oder direkt an <a href="mailto:info@lweb.ch?subject=Steuerhilfe SG%20Lizenz">info@lweb.ch</a> schreiben. Sie erhalten einen persönlichen Lizenzschlüssel per E-Mail, den Sie in der App einfügen. Ein Konto brauchen Sie dafür nicht – nur wenn Sie die Cloud-Sicherung nutzen möchten.</p></details>
     </div>
