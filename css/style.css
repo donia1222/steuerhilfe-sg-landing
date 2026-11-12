@@ -83,6 +83,11 @@ p { margin: 0; }
   opacity: 0; transform: translateY(-8px); transition: opacity .25s var(--ease), transform .3s var(--ease); }
 .mnav.is-open { opacity: 1; transform: none; }
 .mnav[hidden] { display: none; }
+/* Velo oscuro detrás del menú del móvil (12/11/2026); el clic en él cierra el menú */
+.mnav-velo { position: fixed; inset: 0; z-index: 29; background: rgba(10, 22, 19, .72); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); opacity: 0; transition: opacity .3s var(--ease); }
+.mnav-velo.is-open { opacity: 1; }
+.mnav-velo[hidden] { display: none; }
+html.menu-offen { overflow: hidden; }
 .mnav a:not(.btn) { padding: 13px 4px; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); font-weight: 600; }
 .mnav .btn { margin-top: 12px; }
 
@@ -265,7 +270,7 @@ details p { padding-bottom: 20px; color: var(--ink-2); }
 .js .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .mnav, .burger span { transition: none; }
+  .mnav, .mnav-velo, .burger span { transition: none; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
 }
 

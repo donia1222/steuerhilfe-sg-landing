@@ -11,6 +11,9 @@
 
   // Mobiles Menü
   const burger = $('.burger'), mnav = $('.mnav');
+  // 12/11/2026: velo oscuro detrás del menú abierto, para que no se lea la página de atrás.
+  // Va fuera de la cabecera: su backdrop-filter atraparía un position:fixed dentro de ella.
+  const velo = document.createElement('div'); velo.className = 'mnav-velo'; velo.hidden = true; document.body.appendChild(velo);
   let menuTimer;
   const isOpen = () => burger.getAttribute('aria-expanded') === 'true';
   const setMenu = (open) => {
@@ -18,11 +21,11 @@
     burger.setAttribute('aria-expanded', String(open));
     burger.setAttribute('aria-label', open ? 'Menü schliessen' : 'Menü öffnen');
     if (open) {
-      mnav.hidden = false;
-      requestAnimationFrame(() => requestAnimationFrame(() => mnav.classList.add('is-open')));
+      mnav.hidden = false; velo.hidden = false; document.documentElement.classList.add('menu-offen');
+      requestAnimationFrame(() => requestAnimationFrame(() => { mnav.classList.add('is-open'); velo.classList.add('is-open'); }));
     } else {
-      mnav.classList.remove('is-open');
-      menuTimer = setTimeout(() => { if (!isOpen()) mnav.hidden = true; }, reduced ? 0 : 300);
+      mnav.classList.remove('is-open'); velo.classList.remove('is-open'); document.documentElement.classList.remove('menu-offen');
+      menuTimer = setTimeout(() => { if (!isOpen()) { mnav.hidden = true; velo.hidden = true; } }, reduced ? 0 : 300);
     }
   };
   burger.addEventListener('click', () => setMenu(!isOpen()));
